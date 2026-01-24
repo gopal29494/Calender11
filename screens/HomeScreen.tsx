@@ -32,7 +32,7 @@ export default function HomeScreen() {
 
         try {
             setLoading(true);
-            const backendUrl = Platform.OS === 'android' ? 'http://10.0.2.2:8000' : 'http://localhost:8000';
+            const backendUrl = 'https://calender11.onrender.com';
 
             // 1. SYNC (Background Update)
             // Fire and forget or await? Await to ensure we get latest, but don't fail display if it fails.
@@ -75,7 +75,7 @@ export default function HomeScreen() {
             if (initialSession?.user) {
                 addLog("Session found: " + initialSession.user.email);
                 fetchRealEvents(initialSession);
-                const backendUrl = Platform.OS === 'android' ? 'http://10.0.2.2:8000' : 'http://localhost:8000';
+                const backendUrl = 'https://calender11.onrender.com';
                 syncReminders(initialSession.user.id, backendUrl);
             } else {
                 addLog("No session found.");
@@ -87,7 +87,7 @@ export default function HomeScreen() {
             if (updatedSession?.user) {
                 addLog("Auth Change: Session updated.");
                 fetchRealEvents(updatedSession);
-                const backendUrl = Platform.OS === 'android' ? 'http://10.0.2.2:8000' : 'http://localhost:8000';
+                const backendUrl = 'https://calender11.onrender.com';
                 syncReminders(updatedSession.user.id, backendUrl);
             }
         });
@@ -96,7 +96,7 @@ export default function HomeScreen() {
 
     useEffect(() => {
         if (!session?.user) return;
-        const backendUrl = Platform.OS === 'android' ? 'http://10.0.2.2:8000' : 'http://localhost:8000';
+        const backendUrl = 'https://calender11.onrender.com';
         const interval = setInterval(() => {
             console.log("Auto-syncing reminders...");
             syncReminders(session.user.id, backendUrl);
@@ -108,7 +108,7 @@ export default function HomeScreen() {
         setRefreshing(true);
         if (session?.user) {
             fetchRealEvents(session).then(async () => {
-                const backendUrl = Platform.OS === 'android' ? 'http://10.0.2.2:8000' : 'http://localhost:8000';
+                const backendUrl = 'https://calender11.onrender.com';
                 await syncReminders(session.user.id, backendUrl);
                 setRefreshing(false);
             });
@@ -124,7 +124,7 @@ export default function HomeScreen() {
 
     const handleSyncAfterSave = async () => {
         if (session?.user) {
-            const backendUrl = Platform.OS === 'android' ? 'http://10.0.2.2:8000' : 'http://localhost:8000';
+            const backendUrl = 'https://calender11.onrender.com';
             await syncReminders(session.user.id, backendUrl);
             addLog("Settings updated & reminders re-synced.");
         }

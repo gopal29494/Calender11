@@ -64,7 +64,7 @@ export const AlarmProvider: React.FC<{ children: React.ReactNode }> = ({ childre
                 const { data: { session } } = await import('../services/supabase').then(m => m.supabase.auth.getSession());
                 if (!session?.user) return;
 
-                const response = await fetch(`http://localhost:8000/reminders/upcoming?user_id=${session.user.id}`);
+                const response = await fetch(`https://calender11.onrender.com/reminders/upcoming?user_id=${session.user.id}`);
                 const data = await response.json();
 
                 if (data.reminders) {
