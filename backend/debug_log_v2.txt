@@ -2340,3 +2340,79 @@ postgrest.exceptions.APIError: {'message': 'insert or update on table "alarm_set
 [2026-01-24 08:34:55.820681] Returning 100 events. Upsert Error: None
   Upserting 100 events.
   Target Event NOT in upsert list.
+
+[2026-01-24 08:45:29.465487] Returning 100 events. Upsert Error: None
+  Upserting 100 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 08:45:31.922596] Returning 100 events. Upsert Error: None
+  Upserting 100 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 08:45:34.504137] Returning 100 events. Upsert Error: None
+  Upserting 100 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 08:45:37.192675] Returning 100 events. Upsert Error: None
+  Upserting 100 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 08:46:53.229432] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 09:44:57.876360] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 09:45:01.876030] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 09:45:06.081303] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 09:45:14.412392] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 09:45:17.866451] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 10:16:03.426597] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 10:42:18.483854] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 10:42:25.843644] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 10:44:15.082799] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 10:44:21.330619] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 10:51:08.980375] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 11:16:41.566278] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 11:18:17.178964] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 11:31:43.215708] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.

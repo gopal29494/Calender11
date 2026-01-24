@@ -12,7 +12,7 @@ router = APIRouter()
 # SUPABASE_URL/KEY are handled in services/supabase_client.py
 GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID") or os.getenv("EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID")
 GOOGLE_CLIENT_SECRET = os.getenv("GOOGLE_CLIENT_SECRET")
-REDIRECT_URI = "http://localhost:8000/auth/google/callback"  # Update for Prod
+REDIRECT_URI = "https://calender11.onrender.com/auth/google/callback"  # Must match Google Console
 
 
 @router.get("/google/url")
@@ -106,7 +106,7 @@ def google_callback(code: str, state: str):
         supabase.table('connected_accounts').insert(db_data).execute()
 
     # Response Logic
-    frontend_redirect = f"http://localhost:8081/google-link?status=success&email={user_email}"
+    frontend_redirect = f"https://smartalarmm.netlify.app/google-link?status=success&email={user_email}"
     
     from fastapi.responses import HTMLResponse
     
