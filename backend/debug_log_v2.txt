@@ -2292,3 +2292,51 @@ postgrest.exceptions.APIError: {'message': 'insert or update on table "alarm_set
 [2026-01-24 07:56:49.115581] Returning 100 events. Upsert Error: None
   Upserting 100 events.
   Target Event NOT in upsert list.
+
+[2026-01-24 08:08:03.934087] Returning 100 events. Upsert Error: None
+  Upserting 100 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 08:09:30.257350] Returning 100 events. Upsert Error: None
+  Upserting 100 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 08:10:28.216921] Returning 100 events. Upsert Error: None
+  Upserting 100 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 08:11:04.055799] Returning 100 events. Upsert Error: None
+  Upserting 100 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 08:11:42.369668] Returning 100 events. Upsert Error: None
+  Upserting 100 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 08:16:46.897730] Returning 100 events. Upsert Error: None
+  Upserting 100 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 08:17:32.357665] Returning 100 events. Upsert Error: None
+  Upserting 100 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 08:17:52.230380] Returning 100 events. Upsert Error: None
+  Upserting 100 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 08:19:16.089878] Returning 100 events. Upsert Error: None
+  Upserting 100 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 08:19:36.333641] Returning 100 events. Upsert Error: None
+  Upserting 100 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 08:34:42.715417] Returning 100 events. Upsert Error: None
+  Upserting 100 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 08:34:55.820681] Returning 100 events. Upsert Error: None
+  Upserting 100 events.
+  Target Event NOT in upsert list.
