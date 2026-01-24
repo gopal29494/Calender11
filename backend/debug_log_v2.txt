@@ -1,0 +1,2266 @@
+
+[2026-01-21 10:55:07.605888] Returning 51 events. Upsert Error: {'message': "Could not find the 'meeting_link' column of 'events' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T16:30:00+05:30', 'end_time': '2026-01-21T17:30:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T10:55:04.534849'}
+
+[2026-01-21 10:56:04.465428] Returning 51 events. Upsert Error: {'message': "Could not find the 'meeting_link' column of 'events' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T16:30:00+05:30', 'end_time': '2026-01-21T17:30:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T10:56:02.082240'}
+
+[2026-01-21 10:57:11.663940] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T16:30:00+05:30', 'end_time': '2026-01-21T17:30:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'updated_at': '2026-01-21T10:57:09.362859'}
+
+[2026-01-21 10:59:20.810278] Returning 51 events. Upsert Error: {'message': "Could not find the 'meeting_link' column of 'events' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T16:30:00+05:30', 'end_time': '2026-01-21T17:30:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T10:59:17.366266'}
+
+[2026-01-21 10:59:50.955585] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T16:30:00+05:30', 'end_time': '2026-01-21T17:30:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T10:59:47.774844'}
+
+[2026-01-21 11:00:58.023198] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T17:00:00+05:30', 'end_time': '2026-01-21T18:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:00:54.679101'}
+
+[2026-01-21 11:02:23.119532] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T17:00:00+05:30', 'end_time': '2026-01-21T18:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:02:20.156842'}
+
+[2026-01-21 11:03:25.157911] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T17:00:00+05:30', 'end_time': '2026-01-21T18:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:03:22.190134'}
+
+[2026-01-21 11:08:33.804699] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T17:00:00+05:30', 'end_time': '2026-01-21T18:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:08:30.627585'}
+
+[2026-01-21 11:09:09.749245] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T17:00:00+05:30', 'end_time': '2026-01-21T18:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:09:06.775320'}
+
+[2026-01-21 11:18:18.453499] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T17:00:00+05:30', 'end_time': '2026-01-21T18:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:18:09.794590'}
+
+[2026-01-21 11:19:34.207825] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T17:00:00+05:30', 'end_time': '2026-01-21T18:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:19:32.574907'}
+
+[2026-01-21 11:20:15.763235] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T17:00:00+05:30', 'end_time': '2026-01-21T18:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:20:14.180400'}
+
+[2026-01-21 11:22:15.387437] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T17:00:00+05:30', 'end_time': '2026-01-21T18:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:22:13.516275'}
+
+[2026-01-21 11:22:42.393990] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T17:00:00+05:30', 'end_time': '2026-01-21T18:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:22:40.467259'}
+
+[2026-01-21 11:22:57.921768] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T17:00:00+05:30', 'end_time': '2026-01-21T18:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:22:56.242262'}
+
+[2026-01-21 11:24:15.844555] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T17:00:00+05:30', 'end_time': '2026-01-21T18:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:24:14.000069'}
+
+[2026-01-21 11:25:51.603139] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T17:00:00+05:30', 'end_time': '2026-01-21T18:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:25:49.995480'}
+
+[2026-01-21 11:26:44.795382] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T17:00:00+05:30', 'end_time': '2026-01-21T18:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:26:43.033213'}
+
+[2026-01-21 11:26:50.817957] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T17:00:00+05:30', 'end_time': '2026-01-21T18:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:26:49.283888'}
+
+[2026-01-21 11:28:06.432317] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T17:00:00+05:30', 'end_time': '2026-01-21T18:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:28:04.940159'}
+
+[2026-01-21 11:32:19.159734] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T17:00:00+05:30', 'end_time': '2026-01-21T18:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:32:17.501227'}
+
+[2026-01-21 11:34:08.598096] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T17:00:00+05:30', 'end_time': '2026-01-21T18:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:34:07.360470'}
+
+[2026-01-21 11:35:37.640863] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T17:00:00+05:30', 'end_time': '2026-01-21T18:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:35:35.801575'}
+
+[2026-01-21 11:35:42.741268] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T17:00:00+05:30', 'end_time': '2026-01-21T18:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:35:40.853008'}
+
+[2026-01-21 11:36:09.608340] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:36:07.869562'}
+
+[2026-01-21 11:36:14.329224] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:36:12.686258'}
+
+[2026-01-21 11:38:38.579088] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:38:36.868044'}
+
+[2026-01-21 11:38:43.428984] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:38:41.910992'}
+
+[2026-01-21 11:41:02.806582] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:41:00.546367'}
+
+[2026-01-21 11:41:02.936910] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:41:00.868009'}
+
+[2026-01-21 11:41:07.361613] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:41:06.061949'}
+
+[2026-01-21 11:41:12.604050] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:41:10.657642'}
+
+[2026-01-21 11:41:17.671584] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:41:16.153249'}
+
+[2026-01-21 11:41:22.646078] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:41:20.932844'}
+
+[2026-01-21 11:41:27.674269] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:41:26.078676'}
+
+[2026-01-21 11:41:40.790475] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:41:39.140885'}
+
+[2026-01-21 11:42:14.252117] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:42:12.427557'}
+
+[2026-01-21 11:47:03.552765] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:47:01.913419'}
+
+[2026-01-21 11:49:37.024955] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:49:35.506246'}
+
+[2026-01-21 11:50:10.006396] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:50:08.476884'}
+
+[2026-01-21 11:50:34.569192] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:50:32.265211'}
+
+[2026-01-21 11:53:00.862877] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:52:59.407471'}
+
+[2026-01-21 11:53:05.504128] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:53:04.412019'}
+
+[2026-01-21 11:53:51.905816] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:53:50.079180'}
+
+[2026-01-21 11:55:23.465470] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:55:21.760747'}
+
+[2026-01-21 11:56:05.421716] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:56:03.813363'}
+
+[2026-01-21 11:58:19.678263] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T11:58:17.917294'}
+
+[2026-01-21 12:03:11.337355] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T12:03:09.644773'}
+
+[2026-01-21 12:19:01.698529] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T12:18:56.952881'}
+
+[2026-01-21 14:39:28.961647] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T14:39:16.327489'}
+
+[2026-01-21 14:55:54.052678] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': 'dae97c6b-2c34-40c4-9676-b0305b9ef112', 'account_id': 3, 'google_event_id': 'cosm2c9pc4r6abb2cpij4b9kcdij2bb275i68b9o6di3eob5cgq38d34ck', 'title': 'Client meeting', 'description': 'Discussion', 'start_time': '2026-01-21T18:00:00+05:30', 'end_time': '2026-01-21T19:00:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=Y29zbTJjOXBjNHI2YWJiMmNwaWo0YjlrY2RpajJiYjI3NWk2OGI5bzZkaTNlb2I1Y2dxMzhkMzRjayBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/gax-mzqo-nvd', 'updated_at': '2026-01-21T14:55:49.954537'}
+
+[2026-01-22 05:13:10.303820] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:14:56.047124] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:16:15.427236] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:16:37.743706] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:17:37.599052] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:17:58.244159] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:19:34.267009] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:20:28.312098] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:23:33.689413] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:23:36.292349] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:23:43.661536] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:27:02.791304] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:28:47.653364] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:30:15.611215] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:31:17.608206] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:32:29.535212] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:32:48.596022] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:34:27.408379] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:34:56.861071] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:35:11.258106] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:37:10.837122] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:37:55.214999] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:43:13.355477] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:45:29.532379] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:46:33.707712] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:47:59.576042] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:50:11.385820] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:52:55.285921] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 05:55:10.689986] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:00:38.170607] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:02:40.379106] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:04:37.896213] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:05:20.501326] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:11:57.779812] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:24:23.573074] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:25:05.851745] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:26:42.625973] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:27:27.994343] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:27:31.281200] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:27:56.584005] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:28:26.008800] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:28:30.157531] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:28:46.622779] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:28:50.926206] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:29:11.096915] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:29:15.295773] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:29:31.257747] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:29:34.391902] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:30:01.272849] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:30:05.983704] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:34:59.759429] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:35:04.177324] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:35:34.790039] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:35:37.656708] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:36:01.005835] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:36:05.613391] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:36:09.635493] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:37:08.502214] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:37:11.877026] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:37:15.180699] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:38:34.247520] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:38:39.076881] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:38:43.330867] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:42:45.851846] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:42:52.814530] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:42:57.048727] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:42:59.684127] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:43:02.267984] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:43:04.916854] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:43:07.642004] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:43:41.405154] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:43:47.104136] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:43:51.831720] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:44:01.290409] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:44:08.351252] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:44:11.196300] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:44:13.741422] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:44:16.418846] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:45:20.007442] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:45:22.877074] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:45:25.742297] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:45:28.507075] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:51:03.765329] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:51:06.635722] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:51:09.274718] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:51:12.264286] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:51:15.132705] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:51:45.958667] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:51:49.027315] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:51:52.099891] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:51:55.170575] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:51:58.140123] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:57:16.605906] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:57:21.884417] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:57:26.902211] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:57:31.761168] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:58:28.694451] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:58:33.609936] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:58:38.423497] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:58:43.133932] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:59:08.625125] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:59:14.854648] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:59:23.485628] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 06:59:24.708072] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:00:20.618617] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:00:25.535588] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:00:29.861576] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:00:34.340331] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:01:41.411921] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:01:45.903863] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:01:50.628095] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:01:55.278749] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:02:40.189516] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:02:42.955372] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:02:47.358855] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:02:52.272897] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:02:57.095212] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:03:51.774075] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:03:54.533221] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:03:57.297658] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:04:00.270051] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:04:48.705403] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:04:53.411954] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:04:58.532611] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:05:03.652321] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:05:12.094965] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:05:16.692370] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:05:21.471011] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:05:26.438117] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:05:31.302170] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:05:36.318305] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:05:39.800177] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:05:41.849181] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:05:47.174844] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:05:48.812215] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:05:51.874249] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:05:56.696076] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:06:00.486650] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:07:10.220794] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:07:15.135676] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:07:20.151823] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:07:26.092737] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:07:31.219301] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:07:38.073260] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:07:42.782126] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:07:48.005370] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:07:52.204638] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:07:53.021804] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:07:57.835605] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:08:02.240642] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:08:03.003390] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:08:07.742429] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:08:12.533562] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:08:17.395680] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:08:22.105491] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:08:24.048628] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:08:56.107845] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:09:00.913506] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:09:05.624214] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:10:08.038733] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:12:26.023699] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:12:29.401772] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:12:47.316756] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:14:17.845304] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:14:47.031555] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:15:53.076058] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:16:01.578878] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:16:08.165090] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:16:35.063070] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:16:41.505099] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:17:11.820918] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:17:14.909903] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:17:48.156250] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:17:51.831171] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:18:36.504020] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:18:40.907996] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:19:13.780055] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:19:18.115704] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:19:42.095008] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:19:46.222844] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:20:12.765864] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:20:18.711282] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:20:26.386850] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:20:34.961248] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:20:46.181973] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:20:51.931453] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:21:14.498705] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:21:17.969205] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:21:53.057214] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:21:57.825939] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[ERROR] PUT /settings failed: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+Payload: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'global_reminder_offset_minutes': 30, 'reminder_offsets': [30, 9], 'default_alarm_sound': 'default', 'morning_mode_enabled': False, 'morning_mode_sound': 'default'}
+Traceback (most recent call last):
+  File "C:\varma alarm\backend\routers\reminders.py", line 68, in update_settings
+    response = supabase.table("alarm_settings").upsert(data).execute()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\varma alarm\backend\venv\Lib\site-packages\postgrest\_sync\request_builder.py", line 53, in execute
+    raise APIError(dict(json_obj))
+postgrest.exceptions.APIError: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+
+[2026-01-22 07:22:07.191063] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:22:11.852621] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[ERROR] PUT /settings failed: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+Payload: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'global_reminder_offset_minutes': 30, 'reminder_offsets': [30, 7], 'default_alarm_sound': 'default', 'morning_mode_enabled': False, 'morning_mode_sound': 'default'}
+Traceback (most recent call last):
+  File "C:\varma alarm\backend\routers\reminders.py", line 68, in update_settings
+    response = supabase.table("alarm_settings").upsert(data).execute()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\varma alarm\backend\venv\Lib\site-packages\postgrest\_sync\request_builder.py", line 53, in execute
+    raise APIError(dict(json_obj))
+postgrest.exceptions.APIError: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+
+[2026-01-22 07:24:59.993531] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:25:04.191465] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:26:02.560180] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:26:06.045148] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:28:53.569194] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[ERROR] PUT /settings failed: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+Payload: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'global_reminder_offset_minutes': 30, 'reminder_offsets': [30, 1], 'default_alarm_sound': 'default', 'morning_mode_enabled': False, 'morning_mode_sound': 'default'}
+Traceback (most recent call last):
+  File "C:\varma alarm\backend\routers\reminders.py", line 68, in update_settings
+    response = supabase.table("alarm_settings").upsert(data).execute()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\varma alarm\backend\venv\Lib\site-packages\postgrest\_sync\request_builder.py", line 53, in execute
+    raise APIError(dict(json_obj))
+postgrest.exceptions.APIError: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+
+[ERROR] PUT /settings failed: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+Payload: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'global_reminder_offset_minutes': 30, 'reminder_offsets': [30], 'default_alarm_sound': 'default', 'morning_mode_enabled': False, 'morning_mode_sound': 'default'}
+Traceback (most recent call last):
+  File "C:\varma alarm\backend\routers\reminders.py", line 68, in update_settings
+    response = supabase.table("alarm_settings").upsert(data).execute()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\varma alarm\backend\venv\Lib\site-packages\postgrest\_sync\request_builder.py", line 53, in execute
+    raise APIError(dict(json_obj))
+postgrest.exceptions.APIError: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+
+[ERROR] PUT /settings failed: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+Payload: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'global_reminder_offset_minutes': 30, 'reminder_offsets': [30], 'default_alarm_sound': 'loud', 'morning_mode_enabled': False, 'morning_mode_sound': 'default'}
+Traceback (most recent call last):
+  File "C:\varma alarm\backend\routers\reminders.py", line 68, in update_settings
+    response = supabase.table("alarm_settings").upsert(data).execute()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\varma alarm\backend\venv\Lib\site-packages\postgrest\_sync\request_builder.py", line 53, in execute
+    raise APIError(dict(json_obj))
+postgrest.exceptions.APIError: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+
+[ERROR] PUT /settings failed: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+Payload: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'global_reminder_offset_minutes': 30, 'reminder_offsets': [30, 60], 'default_alarm_sound': 'loud', 'morning_mode_enabled': False, 'morning_mode_sound': 'default'}
+Traceback (most recent call last):
+  File "C:\varma alarm\backend\routers\reminders.py", line 68, in update_settings
+    response = supabase.table("alarm_settings").upsert(data).execute()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\varma alarm\backend\venv\Lib\site-packages\postgrest\_sync\request_builder.py", line 53, in execute
+    raise APIError(dict(json_obj))
+postgrest.exceptions.APIError: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+
+[ERROR] PUT /settings failed: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+Payload: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'global_reminder_offset_minutes': 60, 'reminder_offsets': [60], 'default_alarm_sound': 'loud', 'morning_mode_enabled': False, 'morning_mode_sound': 'default'}
+Traceback (most recent call last):
+  File "C:\varma alarm\backend\routers\reminders.py", line 68, in update_settings
+    response = supabase.table("alarm_settings").upsert(data).execute()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\varma alarm\backend\venv\Lib\site-packages\postgrest\_sync\request_builder.py", line 53, in execute
+    raise APIError(dict(json_obj))
+postgrest.exceptions.APIError: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+
+[ERROR] PUT /settings failed: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+Payload: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'global_reminder_offset_minutes': 30, 'reminder_offsets': [], 'default_alarm_sound': 'loud', 'morning_mode_enabled': False, 'morning_mode_sound': 'default'}
+Traceback (most recent call last):
+  File "C:\varma alarm\backend\routers\reminders.py", line 68, in update_settings
+    response = supabase.table("alarm_settings").upsert(data).execute()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\varma alarm\backend\venv\Lib\site-packages\postgrest\_sync\request_builder.py", line 53, in execute
+    raise APIError(dict(json_obj))
+postgrest.exceptions.APIError: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+
+[2026-01-22 07:29:42.209058] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:30:11.369300] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[ERROR] PUT /settings failed: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+Payload: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'global_reminder_offset_minutes': 30, 'reminder_offsets': [30, 58], 'default_alarm_sound': 'default', 'morning_mode_enabled': False, 'morning_mode_sound': 'default'}
+Traceback (most recent call last):
+  File "C:\varma alarm\backend\routers\reminders.py", line 68, in update_settings
+    response = supabase.table("alarm_settings").upsert(data).execute()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\varma alarm\backend\venv\Lib\site-packages\postgrest\_sync\request_builder.py", line 53, in execute
+    raise APIError(dict(json_obj))
+postgrest.exceptions.APIError: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+
+[2026-01-22 07:31:44.986611] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:33:29.029775] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:34:06.610427] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:36:21.881302] Returning 52 events. Upsert Error: None
+  Upserting 52 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:38:00.709963] Returning 52 events. Upsert Error: None
+  Upserting 52 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:44:27.424326] Returning 52 events. Upsert Error: None
+  Upserting 52 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 07:47:19.393386] Returning 52 events. Upsert Error: None
+  Upserting 52 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 08:19:17.345871] Returning 52 events. Upsert Error: None
+  Upserting 52 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 08:21:18.187861] Returning 52 events. Upsert Error: None
+  Upserting 52 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 08:23:55.777949] Returning 52 events. Upsert Error: None
+  Upserting 52 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 08:24:43.592979] Returning 52 events. Upsert Error: None
+  Upserting 52 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 08:54:45.527905] Returning 52 events. Upsert Error: None
+  Upserting 52 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 09:00:29.692322] Returning 52 events. Upsert Error: None
+  Upserting 52 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 09:09:07.816920] Returning 2 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 2 events.
+  Target Event NOT in upsert list.
+
+[ERROR] PUT /settings failed: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+Payload: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'global_reminder_offset_minutes': 30, 'reminder_offsets': [30], 'default_alarm_sound': 'soft', 'morning_mode_enabled': False, 'morning_mode_sound': 'default'}
+Traceback (most recent call last):
+  File "C:\varma alarm\backend\routers\reminders.py", line 68, in update_settings
+    response = supabase.table("alarm_settings").upsert(data).execute()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\varma alarm\backend\venv\Lib\site-packages\postgrest\_sync\request_builder.py", line 53, in execute
+    raise APIError(dict(json_obj))
+postgrest.exceptions.APIError: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+
+[ERROR] PUT /settings failed: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+Payload: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'global_reminder_offset_minutes': 30, 'reminder_offsets': [30], 'default_alarm_sound': 'default', 'morning_mode_enabled': False, 'morning_mode_sound': 'default'}
+Traceback (most recent call last):
+  File "C:\varma alarm\backend\routers\reminders.py", line 68, in update_settings
+    response = supabase.table("alarm_settings").upsert(data).execute()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\varma alarm\backend\venv\Lib\site-packages\postgrest\_sync\request_builder.py", line 53, in execute
+    raise APIError(dict(json_obj))
+postgrest.exceptions.APIError: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+
+[2026-01-22 09:10:55.414784] Returning 2 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+  Upserting 2 events.
+  Target Event NOT in upsert list.
+
+[ERROR] PUT /settings failed: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+Payload: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'global_reminder_offset_minutes': 30, 'reminder_offsets': [30], 'default_alarm_sound': 'soft', 'morning_mode_enabled': False, 'morning_mode_sound': 'default'}
+Traceback (most recent call last):
+  File "C:\varma alarm\backend\routers\reminders.py", line 68, in update_settings
+    response = supabase.table("alarm_settings").upsert(data).execute()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\varma alarm\backend\venv\Lib\site-packages\postgrest\_sync\request_builder.py", line 53, in execute
+    raise APIError(dict(json_obj))
+postgrest.exceptions.APIError: {'message': 'insert or update on table "alarm_settings" violates foreign key constraint "alarm_settings_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(38a18246-6915-45e6-bc73-df322308f893) is not present in table "users".'}
+
+[2026-01-22 09:14:55.241040] Returning 2 events. Upsert Error: None
+  Upserting 2 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 09:17:34.961475] Returning 2 events. Upsert Error: None
+  Upserting 2 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 09:17:39.233022] Returning 2 events. Upsert Error: None
+  Upserting 2 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 09:17:45.179191] Returning 2 events. Upsert Error: None
+  Upserting 2 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 09:18:38.940785] Returning 2 events. Upsert Error: None
+  Upserting 2 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 09:18:42.000380] Returning 52 events. Upsert Error: None
+  Upserting 52 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 10:18:03.473831] Returning 52 events. Upsert Error: None
+  Upserting 52 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 10:43:36.544021] Returning 52 events. Upsert Error: None
+  Upserting 52 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 10:45:49.827895] Returning 50 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_user_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (user_id)=(8071a739-153b-484b-9b36-3a4089295063) is not present in table "users".'}
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 10:48:19.132366] Returning 52 events. Upsert Error: None
+  Upserting 52 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 10:51:13.015765] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 10:52:51.808185] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 10:54:00.637211] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 11:53:52.793213] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 12:20:15.435057] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 13:45:19.002860] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 14:43:56.242240] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 15:43:06.552208] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 16:41:57.894170] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-22 18:21:31.673277] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 03:12:43.061411] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 03:41:56.700370] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 03:48:37.750187] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 03:49:37.171208] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 03:49:50.233630] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 03:50:32.319290] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 03:51:28.322107] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 03:51:50.347305] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 03:53:01.334809] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 03:53:46.208656] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 03:55:07.206929] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 03:55:52.062793] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 03:56:17.124398] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 03:56:44.333813] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 03:59:04.965061] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 03:59:11.650761] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 03:59:17.883861] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 03:59:24.353392] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 03:59:30.170913] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:00:17.506894] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:16:37.598309] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:16:43.692756] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:17:05.893414] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:17:56.198556] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:18:02.274424] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:19:16.070679] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:20:27.044198] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:21:51.849938] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:22:50.481696] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:23:17.616445] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:23:54.664216] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:29:46.141242] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:30:33.277884] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:32:16.358529] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:38:02.063383] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_account_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (account_id)=(166) is not present in table "connected_accounts".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:38:09.027462] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_account_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (account_id)=(296) is not present in table "connected_accounts".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:38:55.713866] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:38:58.846920] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:39:28.216978] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:39:31.347514] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:40:05.960786] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:40:10.980619] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:41:18.870535] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:41:25.412511] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:43:52.061759] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:43:58.717916] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:44:38.240653] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:44:44.083550] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:44:50.670506] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:44:57.193854] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:45:17.873642] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:45:24.733292] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:45:51.561949] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:50:53.134195] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:50:58.865598] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:51:33.681216] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:52:07.168955] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:52:28.465901] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:55:39.441374] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:55:49.173561] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:55:53.984697] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:58:17.650773] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:58:46.835634] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 04:59:06.486121] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:00:09.061725] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:01:05.689018] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:06:15.347781] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:20:45.237157] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:21:14.321901] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:23:08.799231] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:25:01.443438] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:25:23.666166] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:29:05.328230] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:40:37.275754] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:40:41.577342] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:44:08.024216] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:44:12.626836] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:44:17.448559] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:44:22.355354] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:47:15.556542] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:47:20.429257] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:47:39.063795] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:47:42.748338] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:48:04.868369] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:48:10.195181] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:48:20.090880] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:48:23.501700] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:48:26.779486] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:49:02.317071] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:49:07.439121] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:49:12.331679] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:50:22.294397] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:50:24.135031] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:50:29.460175] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:50:34.728687] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:50:39.699483] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:52:15.341077] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:52:18.311047] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:52:23.226906] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:52:27.936940] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:52:32.649404] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:52:50.561906] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:52:53.984001] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:52:57.320828] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:55:12.594788] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:55:17.242785] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:55:22.119063] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:55:27.236815] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:55:50.278070] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:55:54.784231] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 05:55:59.497514] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:04:50.749934] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_account_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (account_id)=(388) is not present in table "connected_accounts".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:04:52.487187] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:04:55.766825] Returning 1 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_account_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (account_id)=(392) is not present in table "connected_accounts".'}
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:04:58.935300] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:05:02.103058] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:05:30.217491] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:05:33.344153] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:05:36.295471] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:05:39.282561] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:06:33.741244] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:06:38.677242] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:06:43.999817] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:07:40.115869] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:07:45.441615] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:11:25.399463] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:11:29.254418] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:11:33.848131] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:11:38.402413] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:11:43.114389] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:12:01.647065] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:12:06.664866] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:12:11.481772] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:12:16.597007] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:12:21.515910] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:12:26.330783] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:13:31.862996] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:13:36.670246] Returning 51 events. Upsert Error: {'message': 'insert or update on table "events" violates foreign key constraint "events_account_id_fkey"', 'code': '23503', 'hint': None, 'details': 'Key (account_id)=(400) is not present in table "connected_accounts".'}
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:13:39.741869] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:14:08.004919] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:14:11.281452] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:14:35.857782] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:14:38.936876] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:15:01.252544] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:15:04.837644] Returning 1 events. Upsert Error: None
+  Upserting 1 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:16:02.103547] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:16:07.099994] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:47:28.092895] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:56:03.676372] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 06:56:57.020649] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 07:02:24.598959] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 07:13:52.378791] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 08:33:34.127235] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 08:48:42.600195] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 08:50:01.568806] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 08:50:06.364714] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 08:50:11.245167] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 08:50:16.094038] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 08:51:50.196266] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 08:51:53.677206] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 08:52:19.378246] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 08:52:22.860354] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 08:52:30.439764] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'account_id': 419, 'google_event_id': '6dhjgohoc5gj8b9p61h6ab9k6cr64bb16dh36b9jcosmae1n6kp66e1i6s', 'title': 'Team lunch', 'description': '', 'start_time': '2026-01-23T10:00:00Z', 'end_time': '2026-01-23T11:00:00Z', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=NmRoamdvaG9jNWdqOGI5cDYxaDZhYjlrNmNyNjRiYjE2ZGgzNmI5amNvc21hZTFuNmtwNjZlMWk2cyBnb3BhbHZhcm1hMjIwOEBt', 'meeting_link': 'https://meet.google.com/apx-cioz-nsf', 'updated_at': '2026-01-23T08:52:28.489055'}
+
+[2026-01-23 08:52:34.054790] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'account_id': 419, 'google_event_id': '6dhjgohoc5gj8b9p61h6ab9k6cr64bb16dh36b9jcosmae1n6kp66e1i6s', 'title': 'Team lunch', 'description': '', 'start_time': '2026-01-23T10:00:00Z', 'end_time': '2026-01-23T11:00:00Z', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=NmRoamdvaG9jNWdqOGI5cDYxaDZhYjlrNmNyNjRiYjE2ZGgzNmI5amNvc21hZTFuNmtwNjZlMWk2cyBnb3BhbHZhcm1hMjIwOEBt', 'meeting_link': 'https://meet.google.com/apx-cioz-nsf', 'updated_at': '2026-01-23T08:52:32.174821'}
+  Target Event FOUND in upsert list: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'account_id': 426, 'google_event_id': '6dhjgohoc5gj8b9p61h6ab9k6cr64bb16dh36b9jcosmae1n6kp66e1i6s', 'title': 'Team lunch', 'description': '', 'start_time': '2026-01-23T15:30:00+05:30', 'end_time': '2026-01-23T16:30:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=NmRoamdvaG9jNWdqOGI5cDYxaDZhYjlrNmNyNjRiYjE2ZGgzNmI5amNvc21hZTFuNmtwNjZlMWk2cyBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/apx-cioz-nsf', 'updated_at': '2026-01-23T08:52:33.949999'}
+
+[2026-01-23 08:58:38.734255] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'account_id': 419, 'google_event_id': '6dhjgohoc5gj8b9p61h6ab9k6cr64bb16dh36b9jcosmae1n6kp66e1i6s', 'title': 'Team lunch', 'description': '', 'start_time': '2026-01-23T10:00:00Z', 'end_time': '2026-01-23T11:00:00Z', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=NmRoamdvaG9jNWdqOGI5cDYxaDZhYjlrNmNyNjRiYjE2ZGgzNmI5amNvc21hZTFuNmtwNjZlMWk2cyBnb3BhbHZhcm1hMjIwOEBt', 'meeting_link': 'https://meet.google.com/apx-cioz-nsf', 'updated_at': '2026-01-23T08:58:34.829969'}
+  Target Event FOUND in upsert list: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'account_id': 426, 'google_event_id': '6dhjgohoc5gj8b9p61h6ab9k6cr64bb16dh36b9jcosmae1n6kp66e1i6s', 'title': 'Team lunch', 'description': '', 'start_time': '2026-01-23T15:30:00+05:30', 'end_time': '2026-01-23T16:30:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=NmRoamdvaG9jNWdqOGI5cDYxaDZhYjlrNmNyNjRiYjE2ZGgzNmI5amNvc21hZTFuNmtwNjZlMWk2cyBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/apx-cioz-nsf', 'updated_at': '2026-01-23T08:58:38.463009'}
+
+[2026-01-23 08:59:10.207703] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'account_id': 419, 'google_event_id': '6dhjgohoc5gj8b9p61h6ab9k6cr64bb16dh36b9jcosmae1n6kp66e1i6s', 'title': 'Team lunch', 'description': '', 'start_time': '2026-01-23T10:00:00Z', 'end_time': '2026-01-23T11:00:00Z', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=NmRoamdvaG9jNWdqOGI5cDYxaDZhYjlrNmNyNjRiYjE2ZGgzNmI5amNvc21hZTFuNmtwNjZlMWk2cyBnb3BhbHZhcm1hMjIwOEBt', 'meeting_link': 'https://meet.google.com/apx-cioz-nsf', 'updated_at': '2026-01-23T08:59:08.136195'}
+  Target Event FOUND in upsert list: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'account_id': 426, 'google_event_id': '6dhjgohoc5gj8b9p61h6ab9k6cr64bb16dh36b9jcosmae1n6kp66e1i6s', 'title': 'Team lunch', 'description': '', 'start_time': '2026-01-23T15:30:00+05:30', 'end_time': '2026-01-23T16:30:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=NmRoamdvaG9jNWdqOGI5cDYxaDZhYjlrNmNyNjRiYjE2ZGgzNmI5amNvc21hZTFuNmtwNjZlMWk2cyBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/apx-cioz-nsf', 'updated_at': '2026-01-23T08:59:09.718860'}
+
+[2026-01-23 09:01:55.485771] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'account_id': 419, 'google_event_id': '6dhjgohoc5gj8b9p61h6ab9k6cr64bb16dh36b9jcosmae1n6kp66e1i6s', 'title': 'Team lunch', 'description': '', 'start_time': '2026-01-23T10:00:00Z', 'end_time': '2026-01-23T11:00:00Z', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=NmRoamdvaG9jNWdqOGI5cDYxaDZhYjlrNmNyNjRiYjE2ZGgzNmI5amNvc21hZTFuNmtwNjZlMWk2cyBnb3BhbHZhcm1hMjIwOEBt', 'meeting_link': 'https://meet.google.com/apx-cioz-nsf', 'updated_at': '2026-01-23T09:01:53.534687'}
+  Target Event FOUND in upsert list: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'account_id': 426, 'google_event_id': '6dhjgohoc5gj8b9p61h6ab9k6cr64bb16dh36b9jcosmae1n6kp66e1i6s', 'title': 'Team lunch', 'description': '', 'start_time': '2026-01-23T15:30:00+05:30', 'end_time': '2026-01-23T16:30:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=NmRoamdvaG9jNWdqOGI5cDYxaDZhYjlrNmNyNjRiYjE2ZGgzNmI5amNvc21hZTFuNmtwNjZlMWk2cyBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/apx-cioz-nsf', 'updated_at': '2026-01-23T09:01:55.215787'}
+
+[2026-01-23 09:02:27.433910] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': '8071a739-153b-484b-9b36-3a4089295063', 'account_id': 283, 'google_event_id': '6dhjgohoc5gj8b9p61h6ab9k6cr64bb16dh36b9jcosmae1n6kp66e1i6s', 'title': 'Team lunch', 'description': '', 'start_time': '2026-01-23T10:00:00Z', 'end_time': '2026-01-23T11:00:00Z', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=NmRoamdvaG9jNWdqOGI5cDYxaDZhYjlrNmNyNjRiYjE2ZGgzNmI5amNvc21hZTFuNmtwNjZlMWk2cyBnb3BhbHZhcm1hMjIwOEBt', 'meeting_link': 'https://meet.google.com/apx-cioz-nsf', 'updated_at': '2026-01-23T09:02:22.720563'}
+
+[2026-01-23 09:02:32.140778] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': '8071a739-153b-484b-9b36-3a4089295063', 'account_id': 283, 'google_event_id': '6dhjgohoc5gj8b9p61h6ab9k6cr64bb16dh36b9jcosmae1n6kp66e1i6s', 'title': 'Team lunch', 'description': '', 'start_time': '2026-01-23T10:00:00Z', 'end_time': '2026-01-23T11:00:00Z', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=NmRoamdvaG9jNWdqOGI5cDYxaDZhYjlrNmNyNjRiYjE2ZGgzNmI5amNvc21hZTFuNmtwNjZlMWk2cyBnb3BhbHZhcm1hMjIwOEBt', 'meeting_link': 'https://meet.google.com/apx-cioz-nsf', 'updated_at': '2026-01-23T09:02:30.476179'}
+
+[2026-01-23 09:03:35.901724] Returning 100 events. Upsert Error: None
+  Upserting 100 events.
+  Target Event FOUND in upsert list: {'user_id': '8071a739-153b-484b-9b36-3a4089295063', 'account_id': 435, 'google_event_id': '6dhjgohoc5gj8b9p61h6ab9k6cr64bb16dh36b9jcosmae1n6kp66e1i6s', 'title': 'Team lunch', 'description': '', 'start_time': '2026-01-23T15:30:00+05:30', 'end_time': '2026-01-23T16:30:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=NmRoamdvaG9jNWdqOGI5cDYxaDZhYjlrNmNyNjRiYjE2ZGgzNmI5amNvc21hZTFuNmtwNjZlMWk2cyBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/apx-cioz-nsf', 'updated_at': '2026-01-23T09:03:33.989385'}
+
+[2026-01-23 09:03:39.294336] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:07:32.796993] Returning 100 events. Upsert Error: None
+  Upserting 100 events.
+  Target Event FOUND in upsert list: {'user_id': '8071a739-153b-484b-9b36-3a4089295063', 'account_id': 435, 'google_event_id': '6dhjgohoc5gj8b9p61h6ab9k6cr64bb16dh36b9jcosmae1n6kp66e1i6s', 'title': 'Team lunch', 'description': '', 'start_time': '2026-01-23T15:30:00+05:30', 'end_time': '2026-01-23T16:30:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=NmRoamdvaG9jNWdqOGI5cDYxaDZhYjlrNmNyNjRiYjE2ZGgzNmI5amNvc21hZTFuNmtwNjZlMWk2cyBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/apx-cioz-nsf', 'updated_at': '2026-01-23T09:07:30.740579'}
+
+[2026-01-23 09:13:00.066130] Returning 100 events. Upsert Error: None
+  Upserting 100 events.
+  Target Event FOUND in upsert list: {'user_id': '8071a739-153b-484b-9b36-3a4089295063', 'account_id': 435, 'google_event_id': '6dhjgohoc5gj8b9p61h6ab9k6cr64bb16dh36b9jcosmae1n6kp66e1i6s', 'title': 'Team lunch', 'description': '', 'start_time': '2026-01-23T15:30:00+05:30', 'end_time': '2026-01-23T16:30:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=NmRoamdvaG9jNWdqOGI5cDYxaDZhYjlrNmNyNjRiYjE2ZGgzNmI5amNvc21hZTFuNmtwNjZlMWk2cyBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/apx-cioz-nsf', 'updated_at': '2026-01-23T09:12:58.132084'}
+
+[2026-01-23 09:13:31.189111] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'account_id': 419, 'google_event_id': '6dhjgohoc5gj8b9p61h6ab9k6cr64bb16dh36b9jcosmae1n6kp66e1i6s', 'title': 'Team lunch', 'description': '', 'start_time': '2026-01-23T10:00:00Z', 'end_time': '2026-01-23T11:00:00Z', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=NmRoamdvaG9jNWdqOGI5cDYxaDZhYjlrNmNyNjRiYjE2ZGgzNmI5amNvc21hZTFuNmtwNjZlMWk2cyBnb3BhbHZhcm1hMjIwOEBt', 'meeting_link': 'https://meet.google.com/apx-cioz-nsf', 'updated_at': '2026-01-23T09:13:29.173644'}
+  Target Event FOUND in upsert list: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'account_id': 426, 'google_event_id': '6dhjgohoc5gj8b9p61h6ab9k6cr64bb16dh36b9jcosmae1n6kp66e1i6s', 'title': 'Team lunch', 'description': '', 'start_time': '2026-01-23T15:30:00+05:30', 'end_time': '2026-01-23T16:30:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=NmRoamdvaG9jNWdqOGI5cDYxaDZhYjlrNmNyNjRiYjE2ZGgzNmI5amNvc21hZTFuNmtwNjZlMWk2cyBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/apx-cioz-nsf', 'updated_at': '2026-01-23T09:13:30.882136'}
+
+[2026-01-23 09:13:36.261135] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event FOUND in upsert list: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'account_id': 426, 'google_event_id': '6dhjgohoc5gj8b9p61h6ab9k6cr64bb16dh36b9jcosmae1n6kp66e1i6s', 'title': 'Team lunch', 'description': '', 'start_time': '2026-01-23T15:30:00+05:30', 'end_time': '2026-01-23T16:30:00+05:30', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=NmRoamdvaG9jNWdqOGI5cDYxaDZhYjlrNmNyNjRiYjE2ZGgzNmI5amNvc21hZTFuNmtwNjZlMWk2cyBkc3Nnb3BhbHZhcm1hMjI4QG0', 'meeting_link': 'https://meet.google.com/apx-cioz-nsf', 'updated_at': '2026-01-23T09:13:34.619345'}
+  Target Event FOUND in upsert list: {'user_id': '38a18246-6915-45e6-bc73-df322308f893', 'account_id': 419, 'google_event_id': '6dhjgohoc5gj8b9p61h6ab9k6cr64bb16dh36b9jcosmae1n6kp66e1i6s', 'title': 'Team lunch', 'description': '', 'start_time': '2026-01-23T10:00:00Z', 'end_time': '2026-01-23T11:00:00Z', 'is_all_day': False, 'location': None, 'html_link': 'https://www.google.com/calendar/event?eid=NmRoamdvaG9jNWdqOGI5cDYxaDZhYjlrNmNyNjRiYjE2ZGgzNmI5amNvc21hZTFuNmtwNjZlMWk2cyBnb3BhbHZhcm1hMjIwOEBt', 'meeting_link': 'https://meet.google.com/apx-cioz-nsf', 'updated_at': '2026-01-23T09:13:36.142641'}
+
+[2026-01-23 09:25:04.550629] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:25:13.447510] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:25:18.160251] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:25:47.445113] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:25:52.775789] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:30:11.774847] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:31:18.506600] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:32:09.029723] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:32:15.033655] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:32:20.034383] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:33:37.222377] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:33:41.867600] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:33:46.832307] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:36:57.961579] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:39:25.727939] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:39:29.497073] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:39:47.918133] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:39:52.042257] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:43:29.337050] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:43:31.544937] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:43:36.408302] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:49:23.110188] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:49:57.229340] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:50:02.142783] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:50:36.456804] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:50:40.746730] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:51:04.815802] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:51:07.451832] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:51:12.495737] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:52:13.520945] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:53:17.217215] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:54:14.149797] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:54:18.841065] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:55:24.090617] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:55:26.552327] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 09:55:31.669545] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 11:22:29.393095] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 11:22:35.007524] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 12:00:12.118890] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 14:56:55.402854] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 14:56:59.494823] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 15:06:05.112204] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 15:06:15.440956] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 15:11:11.460308] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 15:12:56.916114] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 15:13:36.816625] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 15:14:11.726136] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 15:15:26.460391] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-23 15:15:45.721505] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 04:21:08.795145] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 04:21:12.018177] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 04:22:02.539585] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 04:22:25.491657] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 04:22:43.556134] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 04:22:46.690741] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 04:23:02.358996] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 04:23:05.736404] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 04:23:08.806799] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 04:23:23.967468] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 04:26:43.745092] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 04:38:55.500506] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 05:08:56.295307] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 05:14:31.257027] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 05:15:07.530022] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 05:15:12.084402] Returning 50 events. Upsert Error: None
+  Upserting 50 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 05:16:30.614662] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 05:16:35.239710] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 05:17:01.212793] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 05:30:17.542365] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 05:30:22.053802] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 05:49:14.388252] Returning 51 events. Upsert Error: None
+  Upserting 51 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 05:49:49.521786] Returning 100 events. Upsert Error: None
+  Upserting 100 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 05:49:54.121930] Returning 100 events. Upsert Error: None
+  Upserting 100 events.
+  Target Event NOT in upsert list.
+
+[2026-01-24 06:58:16.180045] Returning 100 events. Upsert Error: None
+  Upserting 100 events.
+  Target Event NOT in upsert list.

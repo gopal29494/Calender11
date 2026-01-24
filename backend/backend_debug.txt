@@ -1,0 +1,12 @@
+
+[2026-01-21 10:52:26.527232] Returning 51 events. Upsert Error: {'message': "Could not find the 'meeting_link' column of 'events' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+  Upserting 51 events.
+  Sample ID: _6kr30d1i8kpk8b9k84ojcb9k84q32ba16kpj8ba26so3gd1n6h0k8h1h70_20260121T043000Z
+
+[2026-01-21 10:53:51.106778] Returning 51 events. Upsert Error: {'message': "Could not find the 'meeting_link' column of 'events' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+  Upserting 51 events.
+  Sample ID: _6kr30d1i8kpk8b9k84ojcb9k84q32ba16kpj8ba26so3gd1n6h0k8h1h70_20260121T043000Z
+
+[2026-01-21 10:54:04.321260] Returning 51 events. Upsert Error: {'message': "Could not find the 'meeting_link' column of 'events' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+  Upserting 51 events.
+  Sample ID: _6kr30d1i8kpk8b9k84ojcb9k84q32ba16kpj8ba26so3gd1n6h0k8h1h70_20260121T043000Z

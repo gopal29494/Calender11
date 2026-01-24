@@ -1,0 +1,366 @@
+from fastapi import APIRouter, HTTPException, Header
+import os
+from services.supabase_client import supabase
+import requests
+from datetime import datetime, timedelta
+import re
+
+
+
+# Config
+GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID") or os.getenv("EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID")
+GOOGLE_CLIENT_SECRET = os.getenv("GOOGLE_CLIENT_SECRET")
+
+router = APIRouter()
+
+def refresh_google_token(account):
+    """Uses refresh_token to get a new access_token and updates DB."""
+    refresh_token = account.get('refresh_token')
+    if not refresh_token:
+        print(f"[{account.get('email')}] No refresh token available.")
+        return None
+        
+    url = "https://oauth2.googleapis.com/token"
+    data = {
+        "client_id": GOOGLE_CLIENT_ID,
+        "client_secret": GOOGLE_CLIENT_SECRET,
+        "refresh_token": refresh_token,
+        "grant_type": "refresh_token"
+    }
+    
+    try:
+        print(f"Refreshing token for {account.get('email')}...")
+        resp = requests.post(url, data=data)
+        if resp.status_code == 200:
+            new_tokens = resp.json()
+            new_access = new_tokens.get('access_token')
+            print(f"[{account.get('email')}] Token refreshed successfully.")
+            
+            # Update DB with new token and naive UTC time
+            supabase.table('connected_accounts').update({
+                'access_token': new_access,
+                'updated_at': datetime.utcnow().isoformat()
+            }).eq('id', account['id']).execute()
+            
+            return new_access
+        else:
+            print(f"[{account.get('email')}] Refresh failed: {resp.text}")
+            return None
+    except Exception as e:
+        print(f"Error refreshing token: {e}")
+        return None
+
+
+@router.get("/fetch-from-google")
+def fetch_google_events(x_user_id: str = Header(None), x_google_token: str = Header(None), x_google_refresh_token: str = Header(None)):
+    
+    if not x_user_id:
+         raise HTTPException(status_code=400, detail="Missing X-User-Id header")
+
+    print(f"\n--- Starting Event Fetch for User: {x_user_id} ---")
+    all_events = []
+    
+    # 1. Get all connected accounts from DB
+    try:
+        db_accounts = supabase.table('connected_accounts').select('*').eq('user_id', x_user_id).execute()
+        accounts = db_accounts.data or []
+    except Exception as e:
+        print(f"DB Error fetching accounts: {e}")
+        accounts = []
+    
+    print(f"Found {len(accounts)} connected accounts in DB.")
+
+    # 2. Build list of sources and fetch
+    try:
+        sources = []
+        
+        # Add DB accounts
+        for acc in accounts:
+            sources.append({
+                'token': acc.get('access_token'),
+                'refresh_token': acc.get('refresh_token'),
+                'email': acc.get('email'),
+                'id': acc.get('id'),
+                'is_primary': False
+            })
+
+        # Add Primary Header Token (Fallback/Session)
+        if x_google_token:
+            # 2a. Resolve Email for Primary Token
+            try:
+                user_info_resp = requests.get(
+                    "https://www.googleapis.com/oauth2/v2/userinfo",
+                    headers={'Authorization': f'Bearer {x_google_token}'}
+                )
+                if user_info_resp.status_code == 200:
+                    u_info = user_info_resp.json()
+                    p_email = u_info.get('email')
+                    
+                    # 2b. Upsert into connected_accounts to get a valid ID for persistence
+                    account_data = {
+                        "user_id": x_user_id,
+                        "email": p_email,
+                        "access_token": x_google_token,
+                        "updated_at": datetime.utcnow().isoformat()
+                    }
+                    # Only update refresh_token if we actually received one (don't overwrite with None)
+                    if x_google_refresh_token:
+                        account_data["refresh_token"] = x_google_refresh_token
+                        
+                    upsert_resp = supabase.table("connected_accounts").upsert(account_data, on_conflict="user_id, email").execute()
+                    
+                    # Fetch the ID back (upsert returns data)
+                    if upsert_resp.data:
+                        p_id = upsert_resp.data[0]['id']
+                        
+                        sources.append({
+                            'token': x_google_token,
+                            'refresh_token': upsert_resp.data[0].get('refresh_token'), # Might be None
+                            'email': p_email,
+                            'id': p_id, # Real UUID
+                            'is_primary': True
+                        })
+                    else:
+                         print("Failed to upsert primary account.")
+                else:
+                    print(f"Failed to get user info for primary token: {user_info_resp.text}")
+            except Exception as e:
+                print(f"Error resolving primary token: {e}")
+
+        if not sources:
+             print("No accounts connected and no session token provided.")
+             return {"events": []}
+        
+        # Time Min start of today UTC
+        # Use simple naive UTC + 'Z' to satisfy Google API
+        time_min = datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0).isoformat() + 'Z'
+        print(f"Fetching events from: {time_min}")
+        
+        fetched_emails = set()
+        events_to_upsert = []
+
+        for source in sources:
+            source_email = source.get('email', 'Unknown')
+            token = source['token']
+            
+            # Dedup
+            if source_email in fetched_emails and source_email != 'Primary (Session)':
+                continue
+
+            print(f"Fetching for: {source_email}...")
+
+            # Function to try fetching
+            def try_fetch(access_token):
+                url = f"https://www.googleapis.com/calendar/v3/calendars/primary/events?timeMin={time_min}&singleEvents=true&orderBy=startTime&maxResults=50"
+                headers = {'Authorization': f'Bearer {access_token}'}
+                return requests.get(url, headers=headers)
+
+            response = try_fetch(token)
+            
+            # Handle 401 (Refresh Token) if applicable
+            if response.status_code == 401:
+                # Only attempt refresh for DB-linked accounts that have a refresh token
+                if source['refresh_token']:
+                    print(f"[{source_email}] Token 401. Attempting refresh...")
+                    new_token = refresh_google_token(source)
+                    if new_token:
+                        response = try_fetch(new_token)
+                    else:
+                        print(f"[{source_email}] Refresh failed. Skipping.")
+                        continue
+                else:
+                     print(f"[{source_email}] Token 401 and no refresh token. Skipping.")
+                     continue
+
+            # Process Response
+            if response.status_code == 200:
+                data = response.json()
+                items = data.get('items', [])
+                
+                if source_email != 'Unknown':
+                     fetched_emails.add(source_email)
+
+                print(f"[{source_email}] Success. Found {len(items)} events.")
+                
+                for item in items:
+                    # Skip cancelled
+                    if item.get('status') == 'cancelled':
+                        continue
+                        
+                    start_raw = item.get('start', {}).get('dateTime') or item.get('start', {}).get('date')
+                    end_raw = item.get('end', {}).get('dateTime') or item.get('end', {}).get('date')
+                    
+                    # Formatting time string for UI
+                    try:
+                        # Simple parse
+                        if 'T' in start_raw:
+                            # Is ISO format with likely offset or Z
+                            # We just want a simple HH:MM AM/PM representation
+                            # This is rough but works for display
+                            # Better: use dateutil, but trying to keep deps minimal if not installed
+                             val = start_raw.split('T')[1][:5]
+                             # Convert 24h to 12h manually or use datetime
+                             # Let's try datetime parse
+                             dt = datetime.fromisoformat(start_raw.replace('Z', '+00:00'))
+                             time_str = dt.strftime("%I:%M %p")
+                        else:
+                             # Full day
+                             time_str = "All Day"
+                    except:
+                        time_str = start_raw
+
+                    
+                    # Extract Meeting Link
+                    meeting_link = item.get('hangoutLink')
+                    if not meeting_link:
+                        # Search in description and location
+                        text_to_search = (item.get('description') or '') + " " + (item.get('location') or '')
+                        # Regex for common meeting tools (Google Meet, Zoom, Teams)
+                        try:
+                            # Expanded regex to catch more variations
+                            match = re.search(r'(https?://)?(meet\.google\.com/[a-z]{3}-[a-z]{4}-[a-z]{3}|zoom\.us/j/\d+|teams\.microsoft\.com/l/meetup-join/[^\s"<]+)', text_to_search, re.IGNORECASE)
+                            if match:
+                                meeting_link = match.group(0)
+                                # Ensure protocol
+                                if not meeting_link.startswith('http'):
+                                    meeting_link = 'https://' + meeting_link
+                                print(f"DEBUG: Found Manual Meeting Link for '{item.get('summary')}': {meeting_link}")
+                        except Exception as e:
+                            print(f"Regex Error: {e}")
+
+                    event_obj = {
+                        'id': item.get('id'),
+                        'title': item.get('summary', '(No Title)'),
+                        'start': start_raw,
+                        'end': end_raw,
+                        'time': time_str,
+                        'link': item.get('htmlLink'),
+                        'meeting_link': meeting_link,
+                        'source': source_email,
+                        'calendar': 'Google',
+                        'color': '#4F46E5' 
+                    }
+                    all_events.append(event_obj)
+                    
+                    # DB Upsert Preparation
+                    # Persist ALL accounts now since we have valid IDs
+                    if source['id']:
+                        if not start_raw or not end_raw:
+                            print(f"Skipping event {item.get('id')} due to missing dates.")
+                            continue
+
+                        db_record = {
+                             "user_id": x_user_id,
+                             "account_id": source['id'],
+                             "google_event_id": item['id'],
+                             "title": item.get('summary', '(No Title)'),
+                             "description": item.get('description', ''),
+                             "start_time": start_raw,
+                             "end_time": end_raw,
+                             "is_all_day": 'date' in item.get('start', {}),
+                             "location": item.get('location'),
+                             "html_link": item.get('htmlLink'),
+                             "meeting_link": meeting_link,
+                             "updated_at": datetime.utcnow().isoformat()
+                        }
+                        events_to_upsert.append(db_record)
+
+            else:
+                 print(f"[{source_email}] API Error: {response.status_code} {response.text}")
+
+        # Upsert
+        upsert_error = None
+        if events_to_upsert:
+            try:
+                print(f"DEBUG: Prepare to persist {len(events_to_upsert)} events.")
+                # print(f"Sample Event: {events_to_upsert[0]['google_event_id']}")
+                resp = supabase.table("events").upsert(events_to_upsert, on_conflict="account_id, google_event_id").execute()
+                print(f"Events persisted. Response: {len(resp.data) if resp.data else 'No Data'}")
+            except Exception as e:
+                print(f"Upsert failed: {e}")
+                upsert_error = str(e)
+        else:
+             print("DEBUG: events_to_upsert is EMPTY.")
+
+    except Exception as e:
+        print(f"CRITICAL ERROR in fetch_google_events: {e}")
+        import traceback
+        traceback.print_exc()
+        return {"events": all_events, "error": str(e)}
+
+    # LOG TO FILE
+    try:
+        log_path = r"C:\varma alarm\backend\debug_log_v2.txt"
+        with open(log_path, "a") as f:
+            f.write(f"\n[{datetime.utcnow()}] Returning {len(all_events)} events. Upsert Error: {upsert_error}\n")
+            if events_to_upsert:
+                f.write(f"  Upserting {len(events_to_upsert)} events.\n")
+                # specific check
+                found_target = False
+                for e in events_to_upsert:
+                     if "cosm" in e.get("google_event_id", ""):
+                          f.write(f"  Target Event FOUND in upsert list: {e}\n")
+                          found_target = True
+                if not found_target:
+                     f.write(f"  Target Event NOT in upsert list.\n")
+            else:
+                f.write("  events_to_upsert was EMPTY.\n")
+    except Exception as e:
+        print(f"Log write failed: {e}")
+
+    print(f"Returning {len(all_events)} events total.")
+    return {"events": all_events, "upsert_error": upsert_error}
+
+
+@router.get("/events")
+def get_db_events(user_id: str):
+    try:
+        # Fetch appropriate range (e.g., today onwards)
+        now = datetime.utcnow()
+        lookback = now - timedelta(hours=12) 
+        
+        # 1. Get Account Map (ID -> Email)
+        account_map = {}
+        try:
+            acc_resp = supabase.table("connected_accounts").select("id, email").eq("user_id", user_id).execute()
+            for acc in acc_resp.data:
+                account_map[acc['id']] = acc['email']
+        except:
+             pass
+
+        response = supabase.table("events")\
+            .select("*")\
+            .eq("user_id", user_id)\
+            .gte("start_time", lookback.isoformat())\
+            .order("start_time")\
+            .execute()
+            
+        mapped_events = []
+        seen_ids = set()
+        
+        for ev in response.data:
+            g_id = ev.get('google_event_id')
+            if g_id in seen_ids:
+                continue
+            seen_ids.add(g_id)
+            
+            # Resolve Source Email
+            acc_id = ev.get('account_id')
+            source_email = account_map.get(acc_id, 'Google Calendar')
+
+            mapped_events.append({
+                'id': g_id,
+                'title': ev.get('title'),
+                'start': ev.get('start_time'),
+                'end': ev.get('end_time'),
+                'location': ev.get('location'),
+                'meeting_link': ev.get('meeting_link'),
+                'source': source_email,
+                'color': '#4F46E5',
+                'duration': 'Event' 
+            })
+            
+        return {"events": mapped_events}
+    except Exception as e:
+        print(f"Error fetching DB events: {e}")
+        return {"events": []}
