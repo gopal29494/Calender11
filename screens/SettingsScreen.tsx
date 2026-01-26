@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import { useFocusEffect } from '@react-navigation/native';
+import React, { useCallback, useState } from 'react';
 import { View, Text, StyleSheet, FlatList, TouchableOpacity, Alert, Platform, ScrollView, TextInput } from 'react-native';
 import { supabase } from '../services/supabase';
 import { Ionicons } from '@expo/vector-icons';
 import * as WebBrowser from 'expo-web-browser';
+import * as NotificationService from '../services/NotificationService';
 
 WebBrowser.maybeCompleteAuthSession();
 
@@ -26,10 +28,16 @@ export default function SettingsScreen() {
     const [alarmSound, setAlarmSound] = useState<string>('default');
     const [settingsLoading, setSettingsLoading] = useState(true);
 
-    useEffect(() => {
-        fetchAccounts();
-        fetchSettings();
-    }, []);
+    // Use useFocusEffect to refresh every time the screen comes into view
+    useFocusEffect(
+        useCallback(() => {
+            fetchAccounts();
+            fetchSettings();
+
+            // Optional: return cleanup function if needed
+            return () => { };
+        }, [])
+    );
 
     // Format display (e.g. 60 min -> 1 hr)
     const formatDuration = (minutes: number) => {
@@ -59,10 +67,16 @@ export default function SettingsScreen() {
 
     // Helper to get Backend URL based on platform
     const getBackendUrl = () => {
+        // For local development on Web
+        if (Platform.OS === 'web') return 'http://localhost:8000';
+        // For Android Emulator
+        if (Platform.OS === 'android') return 'http://10.0.2.2:8000';
+        // Default/Prod
         return 'https://calender11.onrender.com';
     };
 
     const fetchSettings = async () => {
+        setSettingsLoading(true);
         try {
             const { data: { user } } = await supabase.auth.getUser();
             if (!user) return;
@@ -75,9 +89,15 @@ export default function SettingsScreen() {
                 const offsets = data.reminder_offsets || (data.global_reminder_offset_minutes ? [data.global_reminder_offset_minutes] : [30]);
                 setReminderOffsets(offsets);
                 setAlarmSound(data.default_alarm_sound || 'default');
+            } else {
+                // Reset to defaults if fetch fails or no data
+                setReminderOffsets([30]);
+                setAlarmSound('default');
             }
         } catch (error) {
             console.error("Failed to fetch settings:", error);
+            // Default on error
+            setReminderOffsets([30]);
         } finally {
             setSettingsLoading(false);
         }
@@ -123,15 +143,28 @@ export default function SettingsScreen() {
 
     const fetchAccounts = async () => {
         const { data: { user } } = await supabase.auth.getUser();
-        if (!user) return;
+        if (!user) {
+            setAccounts([]);
+            return;
+        }
 
+        // Fetch valid accounts (is_active is True or NULL)
+        // If the migration hasn't run, this might fail.
+        // But we rely on the backend now mostly? 
+        // We can just filter on client side if column exists, or specific query.
         const { data, error } = await supabase
             .from('connected_accounts')
             .select('*')
-            .eq('user_id', user.id);
+            .eq('user_id', user.id)
+            .eq('is_active', true); // Only active accounts
 
         if (error) {
             console.error(error);
+            // If error is likely column missing, fallback
+            if (error.message.includes('column') && error.message.includes('active')) {
+                const fallback = await supabase.from('connected_accounts').select('*').eq('user_id', user.id);
+                setAccounts(fallback.data || []);
+            }
         } else {
             setAccounts(data || []);
         }
@@ -151,7 +184,15 @@ export default function SettingsScreen() {
 
             const backendUrl = getBackendUrl();
             const platformParam = Platform.OS === 'web' ? 'web' : 'native';
-            const initResponse = await fetch(`${backendUrl}/auth/google/url?user_id=${user.id}&platform=${platformParam}`);
+
+            // Calculate Redirect URL dynamically
+            let redirectUrl = '';
+            if (Platform.OS === 'web') {
+                redirectUrl = window.location.origin;
+            }
+            // For native, usually we don't need it if we rely on deep links, but passing it won't hurt if backend handles it safely
+
+            const initResponse = await fetch(`${backendUrl}/auth/google/url?user_id=${user.id}&platform=${platformParam}&redirect_url=${encodeURIComponent(redirectUrl)}`);
             const { url } = await initResponse.json();
 
             if (!url) throw new Error("Failed to get auth URL");
@@ -176,13 +217,32 @@ export default function SettingsScreen() {
         const { data: { user } } = await supabase.auth.getUser();
         if (!user) return;
 
-        await supabase
-            .from('connected_accounts')
-            .delete()
-            .eq('user_id', user.id)
-            .eq('email', email);
+        // Perform Soft Delete via Backend
+        try {
+            const response = await fetch(`${getBackendUrl()}/auth/google/disconnect`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ user_id: user.id, email: email })
+            });
 
-        fetchAccounts();
+            if (!response.ok) {
+                const txt = await response.text();
+                throw new Error(txt || "Failed to disconnect");
+            }
+
+            Alert.alert("Success", "Account disconnected.");
+            fetchAccounts();
+
+        } catch (e: any) {
+            console.error("Disconnect error:", e);
+            Alert.alert("Error", "Failed to disconnect account: " + e.message);
+        }
+    };
+
+    const handleSignOut = async () => {
+        // Clear notifications before signing out to prevent next user from getting them
+        await NotificationService.cancelAllNotifications();
+        await supabase.auth.signOut();
     };
 
     return (
@@ -297,7 +357,7 @@ export default function SettingsScreen() {
                 )}
             </TouchableOpacity>
 
-            <TouchableOpacity style={{ marginTop: 50, marginBottom: 20 }} onPress={() => supabase.auth.signOut()}>
+            <TouchableOpacity style={{ marginTop: 50, marginBottom: 20 }} onPress={handleSignOut}>
                 <Text style={{ color: 'red', textAlign: 'center', fontSize: 16 }}>Sign Out of App</Text>
             </TouchableOpacity>
         </ScrollView>

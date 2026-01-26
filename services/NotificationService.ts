@@ -174,5 +174,15 @@ export async function syncReminders(userId: string, backendUrl: string) {
 export async function cancelAllNotifications() {
     if (Platform.OS !== 'web') {
         await Notifications.cancelAllScheduledNotificationsAsync();
+        activeTimers.clear(); // Clear mobile trackers too
+    } else {
+        // Web: Clear all active timeouts
+        console.log(`[Web] Cancelling ${activeTimers.size} active notification timers.`);
+        activeTimers.forEach((value) => {
+            if (value.timerId) {
+                clearTimeout(value.timerId);
+            }
+        });
+        activeTimers.clear();
     }
 }

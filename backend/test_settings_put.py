@@ -5,7 +5,7 @@ URL = "http://localhost:8000/reminders/settings"
 
 # Sample payload based on what frontend sends
 payload = {
-    "user_id": "dae97c6b-2c34-40c4-9676-b0305b9ef112", # Using a known ID from logs
+    "user_id": "a580f75e-f7d5-4fc3-ad11-e57a996ad36e", # Using a known ID from logs
     "global_reminder_offset_minutes": 30,
     "reminder_offsets": [30, 45],
     "default_alarm_sound": "default",

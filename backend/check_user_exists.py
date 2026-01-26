@@ -4,7 +4,7 @@ load_dotenv()
 from services.supabase_client import supabase
 import json
 
-USER_ID = "dae97c6b-2c34-40c4-9676-b0305b9ef112"
+USER_ID = "a580f75e-f7d5-4fc3-ad11-e57a996ad36e"
 
 try:
     print(f"Checking for User ID ({USER_ID}) in public.users...")

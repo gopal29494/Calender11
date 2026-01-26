@@ -16,19 +16,27 @@ REDIRECT_URI = "https://calender11.onrender.com/auth/google/callback"  # Must ma
 
 
 @router.get("/google/url")
-def get_google_auth_url(user_id: str, platform: str = "native"):
+def get_google_auth_url(user_id: str, platform: str = "native", redirect_url: str = ""):
     if not GOOGLE_CLIENT_ID or not GOOGLE_CLIENT_SECRET:
          raise HTTPException(status_code=500, detail="Server misconfiguration: Missing Google Credentials")
 
     base_url = "https://accounts.google.com/o/oauth2/v2/auth"
-    # Encode platform in state: "user_id|platform"
-    state_s = f"{user_id}|{platform}"
+    
+    # Determine Redirect URI based on environment/request
+    # If we are running locally (custom redirect_url provided), try to use local callback to intercept it.
+    # Note: User must have http://localhost:8000/auth/google/callback whitelisted in Google Console.
+    if redirect_url:
+        used_redirect_uri = "http://localhost:8000/auth/google/callback"
+    else:
+        used_redirect_uri = "https://calender11.onrender.com/auth/google/callback"
+    
+    # Encode platform and redirect_url in state: "user_id|platform|redirect_url"
+    state_s = f"{user_id}|{platform}|{redirect_url}"
     
     params = {
         "client_id": GOOGLE_CLIENT_ID,
-        "redirect_uri": REDIRECT_URI,
+        "redirect_uri": used_redirect_uri,
         "response_type": "code",
-        # Request full offline access (refresh token)
         "scope": "https://www.googleapis.com/auth/calendar.readonly https://www.googleapis.com/auth/userinfo.email",
         "access_type": "offline",
         "prompt": "consent",
@@ -37,26 +45,70 @@ def get_google_auth_url(user_id: str, platform: str = "native"):
     url = f"{base_url}?{urllib.parse.urlencode(params)}"
     return {"url": url}
 
+class DisconnectRequest(BaseModel):
+    user_id: str
+    email: str
+
+@router.post("/google/disconnect")
+def disconnect_google_account(req: DisconnectRequest):
+    req_email = req.email.lower()
+    print(f"Received disconnect request for {req_email} (User: {req.user_id})")
+    try:
+        # 1. Get Account ID
+        acc_resp = supabase.table("connected_accounts").select("id").eq("user_id", req.user_id).eq("email", req_email).execute()
+        
+        if acc_resp.data:
+            acc_id = acc_resp.data[0]['id']
+            print(f"Found account ID: {acc_id}. Deleting events and marking inactive.")
+            
+            # 2. Delete Events (Hard Delete Events so they are gone)
+            supabase.table("events").delete().eq("account_id", acc_id).execute()
+            
+            # 3. Soft Delete Account (Set is_active = False)
+            response = supabase.table("connected_accounts").update({
+                "is_active": False,
+                "updated_at": datetime.utcnow().isoformat()
+            }).eq("id", acc_id).execute()
+            
+            if response.data:
+                return {"message": "Account disconnected and events removed successfully"}
+            else:
+                return {"message": "Failed to update account status"}
+        else:
+             print("Account not found for disconnect.")
+             return {"message": "Account not found"}
+    except Exception as e:
+        print(f"Error disconnecting account: {e}")
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=str(e))
+
 @router.get("/google/callback")
 def google_callback(code: str, state: str):
     # Decode state
-    try:
-        user_id, platform = state.split("|")
-    except ValueError:
-        user_id = state
-        platform = "native"
-    
+    # Format: user_id|platform|redirect_url
+    parts = state.split("|")
+    user_id = parts[0]
+    platform = parts[1] if len(parts) > 1 else "native"
+    custom_redirect = parts[2] if len(parts) > 2 else ""
+
     if not code:
         raise HTTPException(status_code=400, detail="Missing code")
+        
+    # Determine which Redirect URI was used based on presence of custom_redirect
+    if custom_redirect:
+        used_redirect_uri = "http://localhost:8000/auth/google/callback"
+    else:
+        used_redirect_uri = "https://calender11.onrender.com/auth/google/callback"
 
     # Exchange code for tokens
     token_url = "https://oauth2.googleapis.com/token"
-    # ... (rest of exchange logic same)
+    
     data = {
         "code": code,
         "client_id": GOOGLE_CLIENT_ID,
         "client_secret": GOOGLE_CLIENT_SECRET,
-        "redirect_uri": REDIRECT_URI,
+        "redirect_uri": used_redirect_uri,
         "grant_type": "authorization_code"
     }
     
@@ -75,8 +127,8 @@ def google_callback(code: str, state: str):
         
     user_email = user_info_resp.json().get('email')
 
+    # ... (Upsert logic to users and connected_accounts remains unchanged) ...
     # ENSURE USER EXISTS IN PUBLIC.USERS
-    # Supabase Auth handles auth.users, but public.users must be synced for FKs
     try:
         supabase.table("users").upsert({
             "id": user_id, 
@@ -92,6 +144,7 @@ def google_callback(code: str, state: str):
         "email": user_email,
         "access_token": access_token,
         "provider": "google",
+        "is_active": True, 
         "updated_at": datetime.utcnow().isoformat()
     }
     
@@ -106,7 +159,11 @@ def google_callback(code: str, state: str):
         supabase.table('connected_accounts').insert(db_data).execute()
 
     # Response Logic
-    frontend_redirect = f"https://smartalarmm.netlify.app/google-link?status=success&email={user_email}"
+    # Use custom redirect if provided, else fallback
+    if custom_redirect:
+        frontend_redirect = f"{custom_redirect}?status=success&email={user_email}"
+    else:
+         frontend_redirect = f"https://smartalarmm.netlify.app/google-link?status=success&email={user_email}"
     
     from fastapi.responses import HTMLResponse
     
@@ -125,7 +182,7 @@ def google_callback(code: str, state: str):
                     }} catch (e) {{
                         console.log('Opener communication failed, but linking worked.');
                     }}
-                    setTimeout(function() {{ window.close(); }}, 1000);
+                    setTimeout(function() {{ window.close(); }}, 3000);
                 </script>
             </body>
         </html>

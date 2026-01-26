@@ -93,26 +93,30 @@ def is_valid_uuid(val):
         return False
 
 @router.put("/events/{event_identifier}")
-def update_event_reminders(event_identifier: str, settings: EventReminderSettings):
+def update_event_reminders(event_identifier: str, settings: EventReminderSettings, user_id: str):
     try:
-        # Update by google_event_id to handle frontend passing Google IDs
+        # Update by google_event_id AND user_id to prevent checking other users' rows
         data = {
             "reminder_offsets": settings.reminder_offsets,
             "updated_at": datetime.now(timezone.utc).isoformat()
         }
         
         # 1. Try updating by Google Event ID (Most common from Frontend)
-        response = supabase.table("events").update(data).eq("google_event_id", event_identifier).execute()
+        # CRITICAL FIX: Add .eq("user_id", user_id) to ensure we only update THIS user's copy of the event
+        response = supabase.table("events").update(data)\
+            .eq("google_event_id", event_identifier)\
+            .eq("user_id", user_id)\
+            .execute()
         
         if response.data:
-            print(f"Updated event reminders via Google ID: {event_identifier}")
+            print(f"Updated event reminders via Google ID: {event_identifier} for user {user_id}")
             return response.data[0]
             
         # 2. If not found, try updating by Internal UUID (Fallback)
         # ONLY if it looks like a valid UUID, otherwise Postgres will error
         if is_valid_uuid(event_identifier):
             print(f"Google ID update failed for {event_identifier}, trying UUID...")
-            response = supabase.table("events").update(data).eq("id", event_identifier).execute()
+            response = supabase.table("events").update(data).eq("id", event_identifier).eq("user_id", user_id).execute()
         
             if response.data:
                 print(f"Updated event reminders via UUID: {event_identifier}")

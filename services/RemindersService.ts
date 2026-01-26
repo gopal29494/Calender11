@@ -17,9 +17,9 @@ export const getEventSettings = async (eventId: string) => {
     }
 };
 
-export const updateEventSettings = async (eventId: string, offsets: number[]) => {
+export const updateEventSettings = async (eventId: string, offsets: number[], userId: string) => {
     try {
-        const response = await fetch(`${getBackendUrl()}/reminders/events/${eventId}`, {
+        const response = await fetch(`${getBackendUrl()}/reminders/events/${eventId}?user_id=${userId}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

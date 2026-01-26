@@ -62,11 +62,19 @@ def fetch_google_events(x_user_id: str = Header(None), x_google_token: str = Hea
     
     # 1. Get all connected accounts from DB
     try:
-        db_accounts = supabase.table('connected_accounts').select('*').eq('user_id', x_user_id).execute()
+        # Filter by is_active (Soft Delete)
+        # Note: If migration run, this works. If not, might error? 
+        # Ideally we catch error, but for now assuming migration applied.
+        db_accounts = supabase.table('connected_accounts').select('*').eq('user_id', x_user_id).eq('is_active', True).execute()
         accounts = db_accounts.data or []
     except Exception as e:
         print(f"DB Error fetching accounts: {e}")
-        accounts = []
+        # Fallback: try fetching without is_active if it failed (migration missing?)
+        try:
+             db_accounts = supabase.table('connected_accounts').select('*').eq('user_id', x_user_id).execute()
+             accounts = db_accounts.data or []
+        except:
+             accounts = []
     
     print(f"Found {len(accounts)} connected accounts in DB.")
 
@@ -94,38 +102,103 @@ def fetch_google_events(x_user_id: str = Header(None), x_google_token: str = Hea
                 )
                 if user_info_resp.status_code == 200:
                     u_info = user_info_resp.json()
-                    p_email = u_info.get('email')
+                    p_email = u_info.get('email', '').strip().lower()
                     
-                    # 2b. Upsert into connected_accounts to get a valid ID for persistence
-                    account_data = {
-                        "user_id": x_user_id,
-                        "email": p_email,
-                        "access_token": x_google_token,
-                        "updated_at": datetime.utcnow().isoformat()
-                    }
-                    # Only update refresh_token if we actually received one (don't overwrite with None)
-                    if x_google_refresh_token:
-                        account_data["refresh_token"] = x_google_refresh_token
+                    with open(r"C:\varma alarm\backend\debug_sync_live.txt", "a") as dbg:
+                        dbg.write(f"\n[{datetime.utcnow()}] Primary Token Email: '{p_email}'\n")
+
+                    # CHECK IF SOFT DELETED (Inactive)
+                    is_inactive = False
+                    try:
+                        # Case insensitive match just to be safe, though we stored as is.
+                        # We use ilike or just exact match on the normalized email?
+                        # Our DB stores what Google gave us. standardizing to lower is good practice.
+                        check_resp = supabase.table("connected_accounts").select("id, is_active, email")\
+                            .eq("user_id", x_user_id)\
+                            .eq("email", p_email)\
+                            .execute()
                         
-                    upsert_resp = supabase.table("connected_accounts").upsert(account_data, on_conflict="user_id, email").execute()
+                        msg = f"DB Check for '{p_email}': {check_resp.data}"
+                        print(msg)
+                        with open(r"C:\varma alarm\backend\debug_sync_live.txt", "a") as dbg:
+                            dbg.write(f"  {msg}\n")
+
+                        if check_resp.data:
+                            # Account exists. Check activity.
+                            # Default is_active is TRUE. So check explicit False.
+                            acc_record = check_resp.data[0]
+                            if acc_record.get("is_active") is False:
+                                is_inactive = True
+                    except Exception as e:
+                        print(f"Error checking inactive status: {e}")
+                        with open(r"C:\varma alarm\backend\debug_sync_live.txt", "a") as dbg:
+                            dbg.write(f"  Error checking status: {e}\n")
                     
-                    # Fetch the ID back (upsert returns data)
-                    if upsert_resp.data:
-                        p_id = upsert_resp.data[0]['id']
-                        
-                        sources.append({
-                            'token': x_google_token,
-                            'refresh_token': upsert_resp.data[0].get('refresh_token'), # Might be None
-                            'email': p_email,
-                            'id': p_id, # Real UUID
-                            'is_primary': True
-                        })
+                    if is_inactive:
+                        skip_msg = f"Skipping INACTIVE primary account: {p_email}"
+                        print(skip_msg)
+                        with open(r"C:\varma alarm\backend\debug_sync_live.txt", "a") as dbg:
+                            dbg.write(f"  {skip_msg}\n")
                     else:
-                         print("Failed to upsert primary account.")
+                        # 2b. Upsert into connected_accounts to get a valid ID for persistence
+                        # Only upsert if NOT inactive.
+                        
+                        # CAREFUL: If we upsert here, we might accidentally re-activate if we are not careful?
+                        # We only want to upsert if it DOES NOT EXIST.
+                        # If it exists and is_active=True, we update tokens.
+                        
+                        db_action = ""
+                        p_id = None
+                        
+                        if check_resp.data:
+                            # Exists and is active (checked above)
+                            p_id = check_resp.data[0]['id']
+                            update_data = {
+                                "access_token": x_google_token,
+                                "updated_at": datetime.utcnow().isoformat()
+                            }
+                            if x_google_refresh_token:
+                                update_data["refresh_token"] = x_google_refresh_token
+                            
+                            supabase.table("connected_accounts").update(update_data).eq("id", p_id).execute()
+                            db_action = "Updated"
+                        else:
+                            # Does not exist. Insert new.
+                            account_data = {
+                                "user_id": x_user_id,
+                                "email": p_email,
+                                "access_token": x_google_token,
+                                "is_active": True,
+                                "updated_at": datetime.utcnow().isoformat()
+                            }
+                            if x_google_refresh_token:
+                                account_data["refresh_token"] = x_google_refresh_token
+                                
+                            upsert_resp = supabase.table("connected_accounts").insert(account_data).execute()
+                            if upsert_resp.data:
+                                p_id = upsert_resp.data[0]['id']
+                                db_action = "Inserted"
+                            else:
+                                db_action = "Insert Failed"
+
+                        if p_id:
+                            sources.append({
+                                'token': x_google_token,
+                                'refresh_token': x_google_refresh_token, # Might be None
+                                'email': p_email,
+                                'id': p_id,
+                                'is_primary': True
+                            })
+                            with open(r"C:\varma alarm\backend\debug_sync_live.txt", "a") as dbg:
+                                dbg.write(f"  Processed Primary: {db_action} ID [{p_id}]\n")
+                        else:
+                             print("Failed to persist primary account.")
                 else:
                     print(f"Failed to get user info for primary token: {user_info_resp.text}")
             except Exception as e:
                 print(f"Error resolving primary token: {e}")
+                with open(r"C:\varma alarm\backend\debug_sync_live.txt", "a") as dbg:
+                    dbg.write(f"  Error resolving primary: {e}\n")
 
         if not sources:
              print("No accounts connected and no session token provided.")
@@ -149,38 +222,57 @@ def fetch_google_events(x_user_id: str = Header(None), x_google_token: str = Hea
 
             print(f"Fetching for: {source_email}...")
 
-            # Function to try fetching
-            def try_fetch(access_token):
-                url = f"https://www.googleapis.com/calendar/v3/calendars/primary/events?timeMin={time_min}&singleEvents=true&orderBy=startTime&maxResults=50"
-                headers = {'Authorization': f'Bearer {access_token}'}
-                return requests.get(url, headers=headers)
-
-            response = try_fetch(token)
-            
-            # Handle 401 (Refresh Token) if applicable
-            if response.status_code == 401:
-                # Only attempt refresh for DB-linked accounts that have a refresh token
-                if source['refresh_token']:
-                    print(f"[{source_email}] Token 401. Attempting refresh...")
-                    new_token = refresh_google_token(source)
-                    if new_token:
-                        response = try_fetch(new_token)
-                    else:
-                        print(f"[{source_email}] Refresh failed. Skipping.")
-                        continue
-                else:
-                     print(f"[{source_email}] Token 401 and no refresh token. Skipping.")
-                     continue
-
-            # Process Response
-            if response.status_code == 200:
-                data = response.json()
-                items = data.get('items', [])
+            # Function to fetch all pages
+            def fetch_with_retry(token, refresh_token):
+                all_items = []
+                page_token = None
                 
+                while True:
+                    url = f"https://www.googleapis.com/calendar/v3/calendars/primary/events?timeMin={time_min}&singleEvents=true&orderBy=startTime&maxResults=250"
+                    if page_token:
+                        url += f"&pageToken={page_token}"
+                        
+                    headers = {'Authorization': f'Bearer {token}'}
+                    print(f"[{source_email}] Requesting page...")
+                    response = requests.get(url, headers=headers)
+                    
+                    if response.status_code == 401:
+                        if refresh_token:
+                            print(f"[{source_email}] Token 401. Attempting refresh...")
+                            new_token = refresh_google_token(source)
+                            if new_token:
+                                token = new_token # Update local token var for next loop
+                                continue # Retry the SAME request (loop will rebuild url without nextToken if it was first page, or with it? Wait. Logic needs to be robust)
+                                # Actually, if we refresh, we should probably restart the fetch or just retry the current page?
+                                # Ideally retry current request.
+                                # But let's keep it simple: if refresh works, update token and retry the iteration.
+                            else:
+                                print(f"[{source_email}] Refresh failed. Abort.")
+                                return 401, []
+                        else:
+                             return 401, []
+                    
+                    if response.status_code != 200:
+                        return response.status_code, []
+                        
+                    data = response.json()
+                    items = data.get('items', [])
+                    all_items.extend(items)
+                    
+                    page_token = data.get('nextPageToken')
+                    if not page_token:
+                        break
+                        
+                return 200, all_items
+
+            status_code, items = fetch_with_retry(token, source['refresh_token'])
+            
+            # Process Response
+            if status_code == 200:
                 if source_email != 'Unknown':
                      fetched_emails.add(source_email)
 
-                print(f"[{source_email}] Success. Found {len(items)} events.")
+                print(f"[{source_email}] Success. Found {len(items)} events total.")
                 
                 for item in items:
                     # Skip cancelled
@@ -319,19 +411,41 @@ def get_db_events(user_id: str):
         now = datetime.utcnow()
         lookback = now - timedelta(hours=12) 
         
-        # 1. Get Account Map (ID -> Email)
+        # 1. Get Active Accounts and Build Map
         account_map = {}
+        active_ids = []
         try:
-            acc_resp = supabase.table("connected_accounts").select("id, email").eq("user_id", user_id).execute()
+            # Filter by is_active=True
+            acc_resp = supabase.table("connected_accounts")\
+                .select("id, email")\
+                .eq("user_id", user_id)\
+                .eq("is_active", True)\
+                .execute()
+                
             for acc in acc_resp.data:
                 account_map[acc['id']] = acc['email']
-        except:
-             pass
+                active_ids.append(acc['id'])
+        except Exception as e:
+             print(f"Error fetching active accounts: {e}")
+             # If error (e.g. column missing), fall back to all? 
+             # No, if column missing, we assume all active?
+             # Let's try fetching all if above failed
+             try:
+                 acc_resp = supabase.table("connected_accounts").select("id, email").eq("user_id", user_id).execute()
+                 for acc in acc_resp.data:
+                    account_map[acc['id']] = acc['email']
+                    active_ids.append(acc['id'])
+             except:
+                 pass
+
+        if not active_ids:
+            return {"events": []}
 
         response = supabase.table("events")\
             .select("*")\
             .eq("user_id", user_id)\
             .gte("start_time", lookback.isoformat())\
+            .in_("account_id", active_ids)\
             .order("start_time")\
             .execute()
             

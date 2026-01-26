@@ -13,8 +13,8 @@ if not url or not key:
 
 supabase = create_client(url, key)
 
-user_id = "dae97c6b-2c34-40c4-9676-b0305b9ef112"
-email = "dssgopalvarma228@gmail.com"
+user_id = "a580f75e-f7d5-4fc3-ad11-e57a996ad36e"
+email = "ajaypamarthi8@gmail.com"
 
 print(f"Attempting to backfill user {user_id}...")
 
@@ -28,7 +28,7 @@ try:
         data = {
             "id": user_id,
             "email": email,
-            "full_name": "Gopal Varma", # Placeholder
+            "full_name": "Ajay Pamarthi", # Placeholder
             "avatar_url": "" 
         }
         res = supabase.table("users").insert(data).execute()

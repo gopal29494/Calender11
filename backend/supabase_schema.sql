@@ -40,6 +40,7 @@ create table public.connected_accounts (
   id uuid default uuid_generate_v4() primary key,
   user_id uuid references public.users(id) not null,
   provider text default 'google',
+  is_active BOOLEAN DEFAULT TRUE,
   email text not null,
   access_token text, -- Consider encryption in production
   refresh_token text, -- Consider encryption in production

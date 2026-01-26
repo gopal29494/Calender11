@@ -95,7 +95,7 @@ export const AlarmProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         pollReminders();
 
         // Interval
-        const interval = setInterval(pollReminders, 10000); // Check every 10s (faster response)
+        const interval = setInterval(pollReminders, 60000); // Check every 60s (reduce load)
         return () => clearInterval(interval);
     }, []);
 

@@ -149,7 +149,7 @@ export default function EventSettingsModal({ visible, onClose, event, refreshEve
     const handleSave = async () => {
         setSaving(true);
         try {
-            await updateEventSettings(event.id, offsets);
+            await updateEventSettings(event.id, offsets, userId);
             refreshEvents();
             onClose();
             Alert.alert("Success", "Reminders updated successfully.");
