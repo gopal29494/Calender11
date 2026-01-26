@@ -27,12 +27,24 @@ export default function HomeScreen() {
 
     const lastFetchTime = React.useRef(0);
 
+    const getBackendUrl = () => {
+        if (Platform.OS === 'web') {
+            const hostname = window.location.hostname;
+            if (hostname === 'localhost' || hostname === '127.0.0.1') {
+                return 'http://localhost:8000';
+            }
+            return 'https://calender11.onrender.com';
+        }
+        if (Platform.OS === 'android') return 'http://10.0.2.2:8000';
+        return 'https://calender11.onrender.com';
+    };
+
     const fetchRealEvents = async (currentSession: Session | null) => {
         if (!currentSession?.user?.id) return;
 
         try {
             setLoading(true);
-            const backendUrl = 'https://calender11.onrender.com';
+            const backendUrl = getBackendUrl();
 
             // 1. SYNC (Background Update)
             // Fire and forget or await? Await to ensure we get latest, but don't fail display if it fails.
@@ -75,7 +87,7 @@ export default function HomeScreen() {
             if (initialSession?.user) {
                 addLog("Session found: " + initialSession.user.email);
                 fetchRealEvents(initialSession);
-                const backendUrl = 'https://calender11.onrender.com';
+                const backendUrl = getBackendUrl();
                 syncReminders(initialSession.user.id, backendUrl);
             } else {
                 addLog("No session found.");
@@ -87,7 +99,7 @@ export default function HomeScreen() {
             if (updatedSession?.user) {
                 addLog("Auth Change: Session updated.");
                 fetchRealEvents(updatedSession);
-                const backendUrl = 'https://calender11.onrender.com';
+                const backendUrl = getBackendUrl();
                 syncReminders(updatedSession.user.id, backendUrl);
             }
         });
@@ -96,7 +108,7 @@ export default function HomeScreen() {
 
     useEffect(() => {
         if (!session?.user) return;
-        const backendUrl = 'https://calender11.onrender.com';
+        const backendUrl = getBackendUrl();
         const interval = setInterval(() => {
             console.log("Auto-syncing reminders...");
             syncReminders(session.user.id, backendUrl);
@@ -108,7 +120,7 @@ export default function HomeScreen() {
         setRefreshing(true);
         if (session?.user) {
             fetchRealEvents(session).then(async () => {
-                const backendUrl = 'https://calender11.onrender.com';
+                const backendUrl = getBackendUrl();
                 await syncReminders(session.user.id, backendUrl);
                 setRefreshing(false);
             });
@@ -124,7 +136,7 @@ export default function HomeScreen() {
 
     const handleSyncAfterSave = async () => {
         if (session?.user) {
-            const backendUrl = 'https://calender11.onrender.com';
+            const backendUrl = getBackendUrl();
             await syncReminders(session.user.id, backendUrl);
             addLog("Settings updated & reminders re-synced.");
         }

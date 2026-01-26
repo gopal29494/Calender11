@@ -104,6 +104,17 @@ def fetch_google_events(x_user_id: str = Header(None), x_google_token: str = Hea
                     u_info = user_info_resp.json()
                     p_email = u_info.get('email', '').strip().lower()
                     
+                    # CRITICAL FIX: Ensure user exists in public.users to satisfy FK for events
+                    try:
+                        print(f"Ensuring user {x_user_id} ({p_email}) exists in public.users...")
+                        supabase.table("users").upsert({
+                            "id": x_user_id,
+                            "email": p_email,
+                            "created_at": datetime.utcnow().isoformat()
+                        }).execute()
+                    except Exception as users_err:
+                        print(f"Warning: Failed to ensure public.users existence: {users_err}")
+
                     with open(r"C:\varma alarm\backend\debug_sync_live.txt", "a") as dbg:
                         dbg.write(f"\n[{datetime.utcnow()}] Primary Token Email: '{p_email}'\n")
 

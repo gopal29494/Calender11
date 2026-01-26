@@ -67,8 +67,13 @@ export default function SettingsScreen() {
 
     // Helper to get Backend URL based on platform
     const getBackendUrl = () => {
-        // For local development on Web
-        if (Platform.OS === 'web') return 'http://localhost:8000';
+        if (Platform.OS === 'web') {
+            const hostname = window.location.hostname;
+            if (hostname === 'localhost' || hostname === '127.0.0.1') {
+                return 'http://localhost:8000';
+            }
+            return 'https://calender11.onrender.com';
+        }
         // For Android Emulator
         if (Platform.OS === 'android') return 'http://10.0.2.2:8000';
         // Default/Prod
