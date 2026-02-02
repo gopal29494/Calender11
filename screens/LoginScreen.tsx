@@ -14,7 +14,10 @@ export default function LoginScreen() {
     const signInWithGoogle = async () => {
         setLoading(true);
         try {
-            const redirectUrl = Linking.createURL('/google-auth');
+            // Explicitly use the native scheme for Android
+            const redirectUrl = Platform.OS === 'web'
+                ? Linking.createURL('/google-auth')
+                : 'com.alarmsmartcalendar.app://google-auth';
             console.log("Redirect URL:", redirectUrl);
 
             const { data, error } = await supabase.auth.signInWithOAuth({
@@ -72,6 +75,12 @@ export default function LoginScreen() {
                 <Ionicons name="logo-google" size={20} color="white" style={{ marginRight: 10 }} />
                 <Text style={styles.buttonText}>{loading ? 'Connecting...' : 'Sign in with Google'}</Text>
             </TouchableOpacity>
+
+            {/* Debugging Info */}
+            <View style={{ marginTop: 20, padding: 10, backgroundColor: '#eee', borderRadius: 8 }}>
+                <Text style={{ fontSize: 10, color: '#555' }}>Debug: {Linking.createURL('/google-auth')}</Text>
+                {loading && <Text style={{ fontSize: 10, color: 'blue' }}>Status: Loading...</Text>}
+            </View>
 
             <Text style={styles.footer}>Powered by Supabase & Expo</Text>
         </View>

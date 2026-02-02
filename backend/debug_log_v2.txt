@@ -2416,3 +2416,15 @@ postgrest.exceptions.APIError: {'message': 'insert or update on table "alarm_set
 [2026-01-24 11:31:43.215708] Returning 51 events. Upsert Error: None
   Upserting 51 events.
   Target Event NOT in upsert list.
+
+[2026-01-26 08:54:58.269191] Returning 4258 events. Upsert Error: None
+  Upserting 4258 events.
+  Target Event NOT in upsert list.
+
+[2026-01-26 08:55:15.592699] Returning 4258 events. Upsert Error: None
+  Upserting 4258 events.
+  Target Event NOT in upsert list.
+
+[2026-01-27 06:31:34.451769] Returning 4252 events. Upsert Error: None
+  Upserting 4252 events.
+  Target Event NOT in upsert list.

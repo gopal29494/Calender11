@@ -5,6 +5,8 @@ import { supabase } from '../services/supabase';
 import { Ionicons } from '@expo/vector-icons';
 import * as WebBrowser from 'expo-web-browser';
 import * as NotificationService from '../services/NotificationService';
+import { getBackendUrl } from '../services/Config';
+import * as Linking from 'expo-linking';
 
 WebBrowser.maybeCompleteAuthSession();
 
@@ -65,20 +67,7 @@ export default function SettingsScreen() {
         setCustomTime('');
     };
 
-    // Helper to get Backend URL based on platform
-    const getBackendUrl = () => {
-        if (Platform.OS === 'web') {
-            const hostname = window.location.hostname;
-            if (hostname === 'localhost' || hostname === '127.0.0.1') {
-                return 'http://localhost:8000';
-            }
-            return 'https://calender11.onrender.com';
-        }
-        // For Android Emulator
-        if (Platform.OS === 'android') return 'http://10.0.2.2:8000';
-        // Default/Prod
-        return 'https://calender11.onrender.com';
-    };
+
 
     const fetchSettings = async () => {
         setSettingsLoading(true);
@@ -194,8 +183,11 @@ export default function SettingsScreen() {
             let redirectUrl = '';
             if (Platform.OS === 'web') {
                 redirectUrl = window.location.origin;
+            } else {
+                // Native: Use deep link scheme
+                redirectUrl = Linking.createURL('google-link');
             }
-            // For native, usually we don't need it if we rely on deep links, but passing it won't hurt if backend handles it safely
+            console.log("Using Redirect URL:", redirectUrl);
 
             const initResponse = await fetch(`${backendUrl}/auth/google/url?user_id=${user.id}&platform=${platformParam}&redirect_url=${encodeURIComponent(redirectUrl)}`);
             const { url } = await initResponse.json();

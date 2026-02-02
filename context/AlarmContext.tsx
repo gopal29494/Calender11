@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState, useEffect, useRef } from 'r
 import { Audio } from 'expo-av';
 import * as Notifications from 'expo-notifications';
 import { Vibration, DeviceEventEmitter } from 'react-native';
+import { getBackendUrl } from '../services/Config';
 
 interface Alarm {
     id: string;
@@ -56,6 +57,12 @@ export const AlarmProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         return () => sub.remove();
     }, []);
 
+
+
+    // ... (imports)
+
+    // ...
+
     // Poll for reminders every 30s
     useEffect(() => {
         const pollReminders = async () => {
@@ -64,10 +71,12 @@ export const AlarmProvider: React.FC<{ children: React.ReactNode }> = ({ childre
                 const { data: { session } } = await import('../services/supabase').then(m => m.supabase.auth.getSession());
                 if (!session?.user) return;
 
-                const response = await fetch(`https://calender11.onrender.com/reminders/upcoming?user_id=${session.user.id}`);
+                const backendUrl = getBackendUrl();
+                const response = await fetch(`${backendUrl}/reminders/upcoming?user_id=${session.user.id}`);
                 const data = await response.json();
 
                 if (data.reminders) {
+
                     // console.log(`Polling: Found ${data.reminders.length} reminders`);
                     data.reminders.forEach((r: any) => {
                         if (r.trigger_immediately) {

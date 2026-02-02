@@ -15,6 +15,7 @@ import AlarmScreen from './screens/AlarmScreen';
 import { AlarmProvider, useAlarm } from './context/AlarmContext';
 import AlarmOverlay from './components/AlarmOverlay';
 import * as Notifications from 'expo-notifications';
+import { registerBackgroundSync } from './services/BackgroundSync';
 
 export type RootStackParamList = {
   Auth: undefined;
@@ -128,6 +129,10 @@ export default function App() {
     });
 
     return () => subscription.unsubscribe();
+  }, []);
+
+  useEffect(() => {
+    registerBackgroundSync();
   }, []);
 
   if (loading) {

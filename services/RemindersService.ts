@@ -1,8 +1,6 @@
 import { Platform } from 'react-native';
+import { getBackendUrl } from './Config';
 
-const getBackendUrl = () => {
-    return 'https://calender11.onrender.com';
-};
 
 export const getEventSettings = async (eventId: string) => {
     try {

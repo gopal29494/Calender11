@@ -4,6 +4,7 @@ import { supabase } from '../services/supabase';
 import { Session } from '@supabase/supabase-js';
 import { Ionicons } from '@expo/vector-icons';
 import { syncReminders, scheduleNotification, requestNotificationPermissions } from '../services/NotificationService';
+import { getBackendUrl } from '../services/Config';
 import EventSettingsModal from '../components/EventSettingsModal';
 
 export default function HomeScreen() {
@@ -27,17 +28,7 @@ export default function HomeScreen() {
 
     const lastFetchTime = React.useRef(0);
 
-    const getBackendUrl = () => {
-        if (Platform.OS === 'web') {
-            const hostname = window.location.hostname;
-            if (hostname === 'localhost' || hostname === '127.0.0.1') {
-                return 'http://localhost:8000';
-            }
-            return 'https://calender11.onrender.com';
-        }
-        if (Platform.OS === 'android') return 'http://10.0.2.2:8000';
-        return 'https://calender11.onrender.com';
-    };
+
 
     const fetchRealEvents = async (currentSession: Session | null) => {
         if (!currentSession?.user?.id) return;

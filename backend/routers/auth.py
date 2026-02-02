@@ -23,9 +23,9 @@ def get_google_auth_url(user_id: str, platform: str = "native", redirect_url: st
     base_url = "https://accounts.google.com/o/oauth2/v2/auth"
     
     # Determine Redirect URI based on environment/request
-    # If we are running locally (custom redirect_url provided), try to use local callback to intercept it.
-    # Note: User must have http://localhost:8000/auth/google/callback whitelisted in Google Console.
-    if redirect_url:
+    # If redirect_url acts as a local web callback (localhost), use localhost backend callback.
+    # Otherwise (e.g. custom scheme for mobile), use production backend callback.
+    if redirect_url and ("localhost" in redirect_url or "127.0.0.1" in redirect_url):
         used_redirect_uri = "http://localhost:8000/auth/google/callback"
     else:
         used_redirect_uri = "https://calender11.onrender.com/auth/google/callback"
@@ -95,8 +95,9 @@ def google_callback(code: str, state: str):
     if not code:
         raise HTTPException(status_code=400, detail="Missing code")
         
-    # Determine which Redirect URI was used based on presence of custom_redirect
-    if custom_redirect:
+    # Determine which Redirect URI was used based on content of custom_redirect
+    # Mirroring logic in get_google_auth_url
+    if custom_redirect and ("localhost" in custom_redirect or "127.0.0.1" in custom_redirect):
         used_redirect_uri = "http://localhost:8000/auth/google/callback"
     else:
         used_redirect_uri = "https://calender11.onrender.com/auth/google/callback"

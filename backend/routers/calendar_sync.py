@@ -78,6 +78,23 @@ def fetch_google_events(x_user_id: str = Header(None), x_google_token: str = Hea
     
     print(f"Found {len(accounts)} connected accounts in DB.")
 
+    # 1b. Self-Healing: Ensure user exists in public.users if we have accounts
+    # This fixes the "events_user_id_fkey" error if the user record is missing but accounts exist.
+    if accounts and len(accounts) > 0:
+        try:
+            # Use the first account's email as a fallback to ensure the user record exists
+            fallback_email = accounts[0].get('email')
+            if fallback_email:
+                print(f"Self-Healing: Ensuring user {x_user_id} exists in public.users (using {fallback_email})...")
+                supabase.table("users").upsert({
+                    "id": x_user_id,
+                    "email": fallback_email
+                    # We avoid sending created_at to not overwrite it on existing users
+                }).execute()
+        except Exception as heal_err:
+             print(f"Self-Healing Failed: {heal_err}")
+
+
     # 2. Build list of sources and fetch
     try:
         sources = []
@@ -391,25 +408,7 @@ def fetch_google_events(x_user_id: str = Header(None), x_google_token: str = Hea
         traceback.print_exc()
         return {"events": all_events, "error": str(e)}
 
-    # LOG TO FILE
-    try:
-        log_path = r"C:\varma alarm\backend\debug_log_v2.txt"
-        with open(log_path, "a") as f:
-            f.write(f"\n[{datetime.utcnow()}] Returning {len(all_events)} events. Upsert Error: {upsert_error}\n")
-            if events_to_upsert:
-                f.write(f"  Upserting {len(events_to_upsert)} events.\n")
-                # specific check
-                found_target = False
-                for e in events_to_upsert:
-                     if "cosm" in e.get("google_event_id", ""):
-                          f.write(f"  Target Event FOUND in upsert list: {e}\n")
-                          found_target = True
-                if not found_target:
-                     f.write(f"  Target Event NOT in upsert list.\n")
-            else:
-                f.write("  events_to_upsert was EMPTY.\n")
-    except Exception as e:
-        print(f"Log write failed: {e}")
+
 
     print(f"Returning {len(all_events)} events total.")
     return {"events": all_events, "upsert_error": upsert_error}

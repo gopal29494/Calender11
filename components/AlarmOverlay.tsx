@@ -46,7 +46,8 @@ export default function AlarmOverlay() {
                         </TouchableOpacity>
 
                         {/* Join Meeting Button Removed as per request */}
-                        {/* {currentAlarm.meeting_link && (
+                        {/* Join Meeting Button */}
+                        {currentAlarm.meeting_link && (
                             <TouchableOpacity
                                 style={[styles.button, styles.joinButton]}
                                 onPress={() => {
@@ -57,7 +58,7 @@ export default function AlarmOverlay() {
                                 <Ionicons name="videocam" size={24} color="#fff" />
                                 <Text style={styles.joinText}>Join Meeting</Text>
                             </TouchableOpacity>
-                        )} */}
+                        )}
 
                         <TouchableOpacity style={[styles.button, styles.stopButton]} onPress={stopAlarm}>
                             <Ionicons name="stop-circle-outline" size={24} color="#fff" />

@@ -72,13 +72,7 @@ def update_settings(settings: AlarmSettings):
     except Exception as e:
         import traceback
         traceback.print_exc()
-        # Log to file
-        try:
-             with open(r"C:\varma alarm\backend\debug_log_v2.txt", "a") as f:
-                 f.write(f"\n[ERROR] PUT /settings failed: {e}\n")
-                 f.write(f"Payload: {settings.dict()}\n")
-                 f.write(traceback.format_exc())
-        except: pass
+
         
         print(f"DB Error in update_settings: {e}")
         raise HTTPException(status_code=500, detail=f"Database Sync Error: {e}")
