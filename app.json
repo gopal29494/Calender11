@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "frontend",
+    "name": "Smart Alarm",
     "platforms": [
       "ios",
       "android",
       "web"
     ],
-    "slug": "frontend",
+    "slug": "smart-alarm",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

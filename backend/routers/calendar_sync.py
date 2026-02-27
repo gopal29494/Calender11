@@ -132,7 +132,7 @@ def fetch_google_events(x_user_id: str = Header(None), x_google_token: str = Hea
                     except Exception as users_err:
                         print(f"Warning: Failed to ensure public.users existence: {users_err}")
 
-                    with open(r"C:\varma alarm\backend\debug_sync_live.txt", "a") as dbg:
+                    with open("debug_sync_live.txt", "a") as dbg:
                         dbg.write(f"\n[{datetime.utcnow()}] Primary Token Email: '{p_email}'\n")
 
                     # CHECK IF SOFT DELETED (Inactive)
@@ -148,7 +148,7 @@ def fetch_google_events(x_user_id: str = Header(None), x_google_token: str = Hea
                         
                         msg = f"DB Check for '{p_email}': {check_resp.data}"
                         print(msg)
-                        with open(r"C:\varma alarm\backend\debug_sync_live.txt", "a") as dbg:
+                        with open("debug_sync_live.txt", "a") as dbg:
                             dbg.write(f"  {msg}\n")
 
                         if check_resp.data:
@@ -159,13 +159,13 @@ def fetch_google_events(x_user_id: str = Header(None), x_google_token: str = Hea
                                 is_inactive = True
                     except Exception as e:
                         print(f"Error checking inactive status: {e}")
-                        with open(r"C:\varma alarm\backend\debug_sync_live.txt", "a") as dbg:
+                        with open("debug_sync_live.txt", "a") as dbg:
                             dbg.write(f"  Error checking status: {e}\n")
                     
                     if is_inactive:
                         skip_msg = f"Skipping INACTIVE primary account: {p_email}"
                         print(skip_msg)
-                        with open(r"C:\varma alarm\backend\debug_sync_live.txt", "a") as dbg:
+                        with open("debug_sync_live.txt", "a") as dbg:
                             dbg.write(f"  {skip_msg}\n")
                     else:
                         # 2b. Upsert into connected_accounts to get a valid ID for persistence
@@ -217,7 +217,7 @@ def fetch_google_events(x_user_id: str = Header(None), x_google_token: str = Hea
                                 'id': p_id,
                                 'is_primary': True
                             })
-                            with open(r"C:\varma alarm\backend\debug_sync_live.txt", "a") as dbg:
+                            with open("debug_sync_live.txt", "a") as dbg:
                                 dbg.write(f"  Processed Primary: {db_action} ID [{p_id}]\n")
                         else:
                              print("Failed to persist primary account.")
@@ -225,7 +225,7 @@ def fetch_google_events(x_user_id: str = Header(None), x_google_token: str = Hea
                     print(f"Failed to get user info for primary token: {user_info_resp.text}")
             except Exception as e:
                 print(f"Error resolving primary token: {e}")
-                with open(r"C:\varma alarm\backend\debug_sync_live.txt", "a") as dbg:
+                with open("debug_sync_live.txt", "a") as dbg:
                     dbg.write(f"  Error resolving primary: {e}\n")
 
         if not sources:

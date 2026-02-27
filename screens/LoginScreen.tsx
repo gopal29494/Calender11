@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Constants from 'expo-constants';
 import { View, Text, StyleSheet, TouchableOpacity, Alert, Platform, Image } from 'react-native';
 import { supabase } from '../services/supabase';
 import * as WebBrowser from 'expo-web-browser';
@@ -11,14 +12,65 @@ WebBrowser.maybeCompleteAuthSession();
 export default function LoginScreen() {
     const [loading, setLoading] = useState(false);
 
+    // Helper to extract params
+    const extractParamsFromUrl = (url: string) => {
+        const params: { [key: string]: string } = {};
+        // Handle both query (?) and hash (#)
+        const regex = /[?&#]([^=#]+)=([^&#]*)/g;
+        let match;
+        while ((match = regex.exec(url))) {
+            params[match[1]] = decodeURIComponent(match[2]);
+        }
+        return params;
+    };
+
+    const handleSessionFromUrl = async (url: string) => {
+        try {
+            const params = extractParamsFromUrl(url);
+            if (params.access_token && params.refresh_token) {
+                console.log("Found session tokens in URL, setting session...");
+                const { error } = await supabase.auth.setSession({
+                    access_token: params.access_token,
+                    refresh_token: params.refresh_token,
+                });
+                if (error) throw error;
+                console.log("Session set successfully");
+            }
+        } catch (e: any) {
+            console.error("Error setting session from URL:", e.message);
+            Alert.alert("Auth Error", "Failed to set session: " + e.message);
+        }
+    };
+
+    // Deep Link Handler
+    useEffect(() => {
+        const handleUrl = async (event: { url: string }) => {
+            console.log("Deep link received:", event.url);
+            if (Platform.OS !== 'web') {
+                await handleSessionFromUrl(event.url);
+            }
+        };
+        const sub = Linking.addEventListener('url', handleUrl);
+        Linking.getInitialURL().then((url) => { if (url) handleUrl({ url }); });
+        return () => sub.remove();
+    }, []);
+
     const signInWithGoogle = async () => {
         setLoading(true);
         try {
-            // Explicitly use the native scheme for Android
-            const redirectUrl = Platform.OS === 'web'
-                ? Linking.createURL('/google-auth')
-                : 'com.alarmsmartcalendar.app://google-auth';
-            console.log("Redirect URL:", redirectUrl);
+            // Use Linking.createURL to support both Expo Go (exp://) and Production (com.app://)
+            let redirectUrl = Linking.createURL('/google-auth');
+
+            // FIX: AWS/Supabase redirects to custom scheme which Expo Go can't handle.
+            // If we see the production scheme but we are in Expo Go, force 'exp://'
+            if (redirectUrl.startsWith('com.alarmsmartcalendar.app')) {
+                console.log('Detected production scheme in Expo Go. Attempting override...');
+                const hostUri = Constants.expoConfig?.hostUri || Constants.manifest?.hostUri;
+                if (hostUri) {
+                    redirectUrl = `exp://${hostUri}/--/google-auth`;
+                }
+            }
+            console.log("Final Redirect URL:", redirectUrl);
 
             const { data, error } = await supabase.auth.signInWithOAuth({
                 provider: 'google',
@@ -36,6 +88,9 @@ export default function LoginScreen() {
 
             if (Platform.OS !== 'web' && data?.url) {
                 const result = await WebBrowser.openAuthSessionAsync(data.url, redirectUrl);
+                if (result.type === 'success' && result.url) {
+                    await handleSessionFromUrl(result.url);
+                }
             }
         } catch (error: any) {
             Alert.alert('Login Error', error.message);
@@ -43,20 +98,6 @@ export default function LoginScreen() {
             setLoading(false);
         }
     };
-
-    // Deep Link Handler
-    useEffect(() => {
-        const handleUrl = async (event: { url: string }) => {
-            if (Platform.OS !== 'web') {
-                try {
-                    await supabase.auth.getSession();
-                } catch (e) { console.error(e); }
-            }
-        };
-        const sub = Linking.addEventListener('url', handleUrl);
-        Linking.getInitialURL().then((url) => { if (url) handleUrl({ url }); });
-        return () => sub.remove();
-    }, []);
 
     return (
         <View style={styles.container}>

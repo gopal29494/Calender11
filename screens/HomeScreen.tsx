@@ -256,8 +256,8 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
     container: {
-        padding: 20,
-        paddingTop: 60,
+        padding: 16,
+        paddingTop: 50,
         backgroundColor: '#F9FAFB',
         flexGrow: 1,
     },
@@ -265,23 +265,33 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginBottom: 30,
+        marginBottom: 25,
+        backgroundColor: '#EEF2FF', // Soft Indigo background
+        padding: 20,
+        borderRadius: 24,
+        borderWidth: 1,
+        borderColor: '#E0E7FF',
     },
     greeting: {
-        fontSize: 16,
-        color: '#6B7280',
-        fontWeight: '500',
+        fontSize: 14,
+        color: '#4F46E5', // Indigo color for visibility
+        fontWeight: '600',
+        textTransform: 'uppercase',
+        letterSpacing: 1,
+        marginBottom: 4,
     },
     username: {
         fontSize: 24,
         color: '#111827',
-        fontWeight: '800',
+        fontWeight: '900',
     },
     avatar: {
-        width: 50,
-        height: 50,
-        borderRadius: 25,
-        backgroundColor: '#E5E7EB',
+        width: 52,
+        height: 52,
+        borderRadius: 26,
+        backgroundColor: '#FFFFFF',
+        borderWidth: 2,
+        borderColor: '#4F46E5',
     },
     alarmCard: {
         backgroundColor: '#4F46E5',

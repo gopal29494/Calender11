@@ -10,14 +10,11 @@ export const getBackendUrl = () => {
         return 'https://calender11.onrender.com';
     }
 
-    // Android: Check if real device or emulator
+    // Android: Use localhost with adb reverse for USB stability
     if (Platform.OS === 'android') {
-        if (!Device.isDevice) {
-            // Emulator
-            return 'http://10.0.2.2:8000';
-        }
+        return 'http://localhost:8000';
     }
 
-    // Physical Device or iOS Default
-    return 'https://calender11.onrender.com';
+    // Physical Device or iOS Default (Development)
+    return 'http://192.168.1.44:8000';
 };
